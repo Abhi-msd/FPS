@@ -1,0 +1,6 @@
+# Dirs
+wts/*
+chekpoints/*
+
+.ipynb_checkpoints/
+__pycache__/

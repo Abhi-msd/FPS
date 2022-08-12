@@ -1,0 +1,355 @@
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - ========== Running DOOM ==========
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Experiment will be saved in: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/mvugwpuv30
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - scenario: defend_the_center
+                                             map_ids_train: [1]
+                                             map_ids_test: [1]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 
+                                             game_features: 
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 4
+                                             frame_skip: 2
+                                             action_combinations: turn_lr+attack
+                                             freelook: False
+                                             speed: off
+                                             crouch: off
+                                             manual_control: False
+                                             players_per_game: 1
+                                             player_rank: 0
+                                             dump_path: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/mvugwpuv30
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/defend_the_center.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_ff
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: 
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [1, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.0
+                                             optimizer: rmsprop,lr=0.0002
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 0
+                                             n_fm: 3
+                                             use_continuous: False
+                                             episode_time: 120
+                                             eval_freq: 30000
+                                             eval_episodes: 20
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - 3 available actions:
+                                             ['TURN_LEFT']
+                                             ['TURN_RIGHT']
+                                             ['ATTACK']
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Reward values:
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Input shape: (3, 60, 108)
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Conv layer output dim : 4608
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Hidden layer input dim: 4672
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/defend_the_center.pth...
+INFO [91820] - 08/09/22 12:32:26 - 0:00:00 - Evaluating the model...
+INFO [91820] - 08/09/22 12:32:27 - 0:00:01 - Kill
+INFO [91820] - 08/09/22 12:32:27 - 0:00:01 - Lost ammo: bullets (56 -> 55)
+INFO [91820] - 08/09/22 12:32:28 - 0:00:02 - Kill
+INFO [91820] - 08/09/22 12:32:28 - 0:00:02 - Lost ammo: bullets (55 -> 54)
+INFO [91820] - 08/09/22 12:32:28 - 0:00:02 - Kill
+INFO [91820] - 08/09/22 12:32:28 - 0:00:02 - Lost ammo: bullets (54 -> 53)
+INFO [91820] - 08/09/22 12:32:29 - 0:00:03 - Kill
+INFO [91820] - 08/09/22 12:32:29 - 0:00:03 - Lost ammo: bullets (53 -> 52)
+INFO [91820] - 08/09/22 12:32:29 - 0:00:03 - Lost ammo: bullets (52 -> 51)
+INFO [91820] - 08/09/22 12:32:30 - 0:00:04 - Kill
+INFO [91820] - 08/09/22 12:32:30 - 0:00:04 - Lost ammo: bullets (51 -> 50)
+INFO [91820] - 08/09/22 12:32:30 - 0:00:04 - Kill
+INFO [91820] - 08/09/22 12:32:30 - 0:00:04 - Lost ammo: bullets (50 -> 49)
+INFO [91820] - 08/09/22 12:32:31 - 0:00:05 - Kill
+INFO [91820] - 08/09/22 12:32:31 - 0:00:05 - Lost ammo: bullets (49 -> 48)
+INFO [91820] - 08/09/22 12:32:31 - 0:00:05 - Kill
+INFO [91820] - 08/09/22 12:32:31 - 0:00:05 - Lost ammo: bullets (48 -> 47)
+INFO [91820] - 08/09/22 12:32:31 - 0:00:05 - Lost ammo: bullets (47 -> 46)
+INFO [91820] - 08/09/22 12:32:31 - 0:00:06 - Kill
+INFO [91820] - 08/09/22 12:32:31 - 0:00:06 - Lost ammo: bullets (46 -> 45)
+INFO [91820] - 08/09/22 12:32:32 - 0:00:06 - Kill
+INFO [91820] - 08/09/22 12:32:32 - 0:00:06 - Lost ammo: bullets (45 -> 44)
+INFO [91820] - 08/09/22 12:32:32 - 0:00:06 - Kill
+INFO [91820] - 08/09/22 12:32:32 - 0:00:06 - Lost ammo: bullets (44 -> 43)
+INFO [91820] - 08/09/22 12:32:33 - 0:00:07 - Kill
+INFO [91820] - 08/09/22 12:32:33 - 0:00:07 - Lost ammo: bullets (43 -> 42)
+INFO [91820] - 08/09/22 12:32:33 - 0:00:08 - Kill
+INFO [91820] - 08/09/22 12:32:33 - 0:00:08 - Lost ammo: bullets (42 -> 41)
+INFO [91820] - 08/09/22 12:32:34 - 0:00:08 - Kill
+INFO [91820] - 08/09/22 12:32:34 - 0:00:08 - Lost ammo: bullets (41 -> 40)
+INFO [91820] - 08/09/22 12:32:34 - 0:00:08 - Kill
+INFO [91820] - 08/09/22 12:32:34 - 0:00:08 - Lost ammo: bullets (40 -> 39)
+INFO [91820] - 08/09/22 12:32:35 - 0:00:09 - Kill
+INFO [91820] - 08/09/22 12:32:35 - 0:00:09 - Lost ammo: bullets (39 -> 38)
+INFO [91820] - 08/09/22 12:32:35 - 0:00:09 - Kill
+INFO [91820] - 08/09/22 12:32:35 - 0:00:09 - Lost ammo: bullets (38 -> 37)
+INFO [91820] - 08/09/22 12:32:37 - 0:00:11 - Kill
+INFO [91820] - 08/09/22 12:32:37 - 0:00:11 - Lost ammo: bullets (37 -> 36)
+INFO [91820] - 08/09/22 12:32:37 - 0:00:11 - Lost ammo: bullets (36 -> 35)
+INFO [91820] - 08/09/22 12:32:37 - 0:00:12 - Kill
+INFO [91820] - 08/09/22 12:32:37 - 0:00:12 - Lost ammo: bullets (35 -> 34)
+INFO [91820] - 08/09/22 12:32:38 - 0:00:12 - Kill
+INFO [91820] - 08/09/22 12:32:38 - 0:00:12 - Lost ammo: bullets (34 -> 33)
+INFO [91820] - 08/09/22 12:32:38 - 0:00:12 - Kill
+INFO [91820] - 08/09/22 12:32:38 - 0:00:12 - Lost ammo: bullets (33 -> 32)
+INFO [91820] - 08/09/22 12:32:39 - 0:00:13 - Kill
+INFO [91820] - 08/09/22 12:32:39 - 0:00:13 - Lost ammo: bullets (32 -> 31)
+INFO [91820] - 08/09/22 12:32:40 - 0:00:14 - Lost ammo: bullets (31 -> 30)
+INFO [91820] - 08/09/22 12:32:40 - 0:00:14 - Kill
+INFO [91820] - 08/09/22 12:32:40 - 0:00:14 - Lost ammo: bullets (30 -> 29)
+INFO [91820] - 08/09/22 12:32:40 - 0:00:14 - Kill
+INFO [91820] - 08/09/22 12:32:40 - 0:00:14 - Lost ammo: bullets (29 -> 28)
+INFO [91820] - 08/09/22 12:32:41 - 0:00:15 - Kill
+INFO [91820] - 08/09/22 12:32:41 - 0:00:15 - Lost ammo: bullets (28 -> 27)
+INFO [91820] - 08/09/22 12:32:41 - 0:00:15 - Kill
+INFO [91820] - 08/09/22 12:32:41 - 0:00:15 - Lost ammo: bullets (27 -> 26)
+INFO [91820] - 08/09/22 12:32:42 - 0:00:16 - Kill
+INFO [91820] - 08/09/22 12:32:42 - 0:00:16 - Lost ammo: bullets (26 -> 25)
+INFO [91820] - 08/09/22 12:32:42 - 0:00:16 - Kill
+INFO [91820] - 08/09/22 12:32:42 - 0:00:16 - Lost ammo: bullets (25 -> 24)
+INFO [91820] - 08/09/22 12:32:43 - 0:00:17 - Kill
+INFO [91820] - 08/09/22 12:32:43 - 0:00:17 - Lost ammo: bullets (24 -> 23)
+INFO [91820] - 08/09/22 12:32:43 - 0:00:17 - Kill
+INFO [91820] - 08/09/22 12:32:43 - 0:00:17 - Lost ammo: bullets (23 -> 22)
+INFO [91820] - 08/09/22 12:32:44 - 0:00:18 - Kill
+INFO [91820] - 08/09/22 12:32:44 - 0:00:18 - Lost ammo: bullets (22 -> 21)
+INFO [91820] - 08/09/22 12:32:44 - 0:00:19 - Kill
+INFO [91820] - 08/09/22 12:32:44 - 0:00:19 - Lost ammo: bullets (21 -> 20)
+INFO [91820] - 08/09/22 12:32:45 - 0:00:19 - Kill
+INFO [91820] - 08/09/22 12:32:45 - 0:00:19 - Lost ammo: bullets (20 -> 19)
+INFO [91820] - 08/09/22 12:32:45 - 0:00:19 - Lost ammo: bullets (19 -> 18)
+INFO [91820] - 08/09/22 12:32:46 - 0:00:20 - Kill
+INFO [91820] - 08/09/22 12:32:46 - 0:00:20 - Lost ammo: bullets (18 -> 17)
+INFO [91820] - 08/09/22 12:32:46 - 0:00:20 - Kill
+INFO [91820] - 08/09/22 12:32:46 - 0:00:20 - Lost ammo: bullets (17 -> 16)
+INFO [91820] - 08/09/22 12:32:46 - 0:00:21 - Kill
+INFO [91820] - 08/09/22 12:32:46 - 0:00:21 - Lost ammo: bullets (16 -> 15)
+INFO [91820] - 08/09/22 12:32:47 - 0:00:21 - Kill
+INFO [91820] - 08/09/22 12:32:47 - 0:00:21 - Lost ammo: bullets (15 -> 14)
+INFO [91820] - 08/09/22 12:32:48 - 0:00:22 - Kill
+INFO [91820] - 08/09/22 12:32:48 - 0:00:22 - Lost ammo: bullets (14 -> 13)
+INFO [91820] - 08/09/22 12:32:48 - 0:00:22 - Kill
+INFO [91820] - 08/09/22 12:32:48 - 0:00:22 - Lost ammo: bullets (13 -> 12)
+INFO [91820] - 08/09/22 12:32:49 - 0:00:23 - Kill
+INFO [91820] - 08/09/22 12:32:49 - 0:00:23 - Lost ammo: bullets (12 -> 11)
+INFO [91820] - 08/09/22 12:32:49 - 0:00:23 - Kill
+INFO [91820] - 08/09/22 12:32:49 - 0:00:23 - Lost ammo: bullets (11 -> 10)
+INFO [91820] - 08/09/22 12:32:50 - 0:00:24 - Kill
+INFO [91820] - 08/09/22 12:32:50 - 0:00:24 - Lost ammo: bullets (10 -> 9)
+INFO [91820] - 08/09/22 12:32:50 - 0:00:24 - Kill
+INFO [91820] - 08/09/22 12:32:50 - 0:00:24 - Lost ammo: bullets (9 -> 8)
+INFO [91820] - 08/09/22 12:32:51 - 0:00:25 - Kill
+INFO [91820] - 08/09/22 12:32:51 - 0:00:25 - Lost ammo: bullets (8 -> 7)
+INFO [91820] - 08/09/22 12:32:51 - 0:00:25 - Lost ammo: bullets (7 -> 6)
+INFO [91820] - 08/09/22 12:32:52 - 0:00:26 - Kill
+INFO [91820] - 08/09/22 12:32:52 - 0:00:26 - Lost ammo: bullets (6 -> 5)
+INFO [91820] - 08/09/22 12:32:52 - 0:00:26 - Kill
+INFO [91820] - 08/09/22 12:32:52 - 0:00:26 - Lost ammo: bullets (5 -> 4)
+INFO [91820] - 08/09/22 12:32:53 - 0:00:27 - Kill
+INFO [91820] - 08/09/22 12:32:53 - 0:00:27 - Lost ammo: bullets (4 -> 3)
+INFO [91820] - 08/09/22 12:32:53 - 0:00:27 - Kill
+INFO [91820] - 08/09/22 12:32:53 - 0:00:27 - Lost ammo: bullets (3 -> 2)
+INFO [91820] - 08/09/22 12:32:54 - 0:00:28 - Kill
+INFO [91820] - 08/09/22 12:32:54 - 0:00:28 - Lost ammo: bullets (2 -> 1)
+INFO [91820] - 08/09/22 12:32:54 - 0:00:28 - Kill
+INFO [91820] - 08/09/22 12:32:54 - 0:00:28 - Lost ammo: bullets (1 -> 0)
+INFO [91820] - 08/09/22 12:32:59 - 0:00:33 - Lost health (100 -> 90)
+INFO [91820] - 08/09/22 12:33:00 - 0:00:34 - Lost health (90 -> 84)
+INFO [91820] - 08/09/22 12:33:00 - 0:00:34 - Lost health (84 -> 80)
+INFO [91820] - 08/09/22 12:33:00 - 0:00:34 - Lost health (80 -> 60)
+INFO [91820] - 08/09/22 12:33:00 - 0:00:34 - Lost health (60 -> 58)
+INFO [91820] - 08/09/22 12:33:00 - 0:00:35 - Lost health (58 -> 46)
+INFO [91820] - 08/09/22 12:33:01 - 0:00:35 - Lost health (46 -> 26)
+INFO [91820] - 08/09/22 12:33:01 - 0:00:35 - Lost health (26 -> 20)
+INFO [91820] - 08/09/22 12:33:01 - 0:00:35 - Lost health (20 -> 16)
+INFO [91820] - 08/09/22 12:33:01 - 0:00:35 - Lost health (16 -> 4)
+INFO [91820] - 08/09/22 12:33:01 - 0:00:36 - Dead
+INFO [91820] - 08/09/22 12:33:01 - 0:00:36 - Lost health (4 -> -2)
+INFO [91820] - 08/09/22 12:33:01 - 0:00:36 - 50 kills.
+INFO [91820] - 08/09/22 12:33:01 - 0:00:36 - ===============
+INFO [91820] - 08/09/22 12:33:01 - 0:00:36 - New episode
+INFO [91820] - 08/09/22 12:33:02 - 0:00:36 - Kill
+INFO [91820] - 08/09/22 12:33:02 - 0:00:36 - Lost ammo: bullets (56 -> 55)
+INFO [91820] - 08/09/22 12:33:02 - 0:00:37 - Kill
+INFO [91820] - 08/09/22 12:33:02 - 0:00:37 - Lost ammo: bullets (55 -> 54)
+INFO [91820] - 08/09/22 12:33:03 - 0:00:37 - Kill
+INFO [91820] - 08/09/22 12:33:03 - 0:00:37 - Lost ammo: bullets (54 -> 53)
+INFO [91820] - 08/09/22 12:33:03 - 0:00:37 - Kill
+INFO [91820] - 08/09/22 12:33:03 - 0:00:37 - Lost ammo: bullets (53 -> 52)
+INFO [91820] - 08/09/22 12:33:04 - 0:00:38 - Lost ammo: bullets (52 -> 51)
+INFO [91820] - 08/09/22 12:33:04 - 0:00:38 - Kill
+INFO [91820] - 08/09/22 12:33:04 - 0:00:38 - Lost ammo: bullets (51 -> 50)
+INFO [91820] - 08/09/22 12:33:05 - 0:00:39 - Kill
+INFO [91820] - 08/09/22 12:33:05 - 0:00:39 - Lost ammo: bullets (50 -> 49)
+INFO [91820] - 08/09/22 12:33:05 - 0:00:39 - Kill
+INFO [91820] - 08/09/22 12:33:05 - 0:00:39 - Lost ammo: bullets (49 -> 48)
+INFO [91820] - 08/09/22 12:33:06 - 0:00:40 - Kill
+INFO [91820] - 08/09/22 12:33:06 - 0:00:40 - Lost ammo: bullets (48 -> 47)
+INFO [91820] - 08/09/22 12:33:06 - 0:00:40 - Kill
+INFO [91820] - 08/09/22 12:33:06 - 0:00:40 - Lost ammo: bullets (47 -> 46)
+INFO [91820] - 08/09/22 12:33:06 - 0:00:41 - Kill
+INFO [91820] - 08/09/22 12:33:06 - 0:00:41 - Lost ammo: bullets (46 -> 45)
+INFO [91820] - 08/09/22 12:33:07 - 0:00:41 - Kill
+INFO [91820] - 08/09/22 12:33:07 - 0:00:41 - Lost ammo: bullets (45 -> 44)
+INFO [91820] - 08/09/22 12:33:07 - 0:00:41 - Kill
+INFO [91820] - 08/09/22 12:33:07 - 0:00:41 - Lost ammo: bullets (44 -> 43)
+INFO [91820] - 08/09/22 12:33:07 - 0:00:41 - Kill
+INFO [91820] - 08/09/22 12:33:07 - 0:00:41 - Lost ammo: bullets (43 -> 42)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Lost ammo: bullets (42 -> 41)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Lost ammo: bullets (41 -> 40)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Lost ammo: bullets (40 -> 39)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Lost ammo: bullets (39 -> 38)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Lost ammo: bullets (38 -> 37)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:42 - Lost ammo: bullets (37 -> 36)
+INFO [91820] - 08/09/22 12:33:08 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:08 - 0:00:43 - Lost ammo: bullets (36 -> 35)
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Lost ammo: bullets (35 -> 34)
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Lost ammo: bullets (34 -> 33)
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Lost ammo: bullets (33 -> 32)
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Lost ammo: bullets (32 -> 31)
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Lost ammo: bullets (31 -> 30)
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Kill
+INFO [91820] - 08/09/22 12:33:09 - 0:00:43 - Lost ammo: bullets (30 -> 29)
+INFO [91820] - 08/09/22 12:33:10 - 0:00:44 - Kill
+INFO [91820] - 08/09/22 12:33:10 - 0:00:44 - Lost ammo: bullets (29 -> 28)
+INFO [91820] - 08/09/22 12:33:11 - 0:00:45 - Kill
+INFO [91820] - 08/09/22 12:33:11 - 0:00:45 - Lost ammo: bullets (28 -> 27)
+INFO [91820] - 08/09/22 12:33:11 - 0:00:45 - Lost ammo: bullets (27 -> 26)
+INFO [91820] - 08/09/22 12:33:11 - 0:00:45 - Kill
+INFO [91820] - 08/09/22 12:33:11 - 0:00:45 - Lost ammo: bullets (26 -> 25)
+INFO [91820] - 08/09/22 12:33:12 - 0:00:46 - Kill
+INFO [91820] - 08/09/22 12:33:12 - 0:00:46 - Lost ammo: bullets (25 -> 24)
+INFO [91820] - 08/09/22 12:33:12 - 0:00:46 - Kill
+INFO [91820] - 08/09/22 12:33:12 - 0:00:46 - Lost ammo: bullets (24 -> 23)
+INFO [91820] - 08/09/22 12:33:13 - 0:00:47 - Kill
+INFO [91820] - 08/09/22 12:33:13 - 0:00:47 - Lost ammo: bullets (23 -> 22)
+INFO [91820] - 08/09/22 12:33:14 - 0:00:48 - Kill
+INFO [91820] - 08/09/22 12:33:14 - 0:00:48 - Lost ammo: bullets (22 -> 21)
+INFO [91820] - 08/09/22 12:33:14 - 0:00:48 - Kill
+INFO [91820] - 08/09/22 12:33:14 - 0:00:48 - Lost ammo: bullets (21 -> 20)
+INFO [91820] - 08/09/22 12:33:15 - 0:00:49 - Kill
+INFO [91820] - 08/09/22 12:33:15 - 0:00:49 - Lost ammo: bullets (20 -> 19)
+INFO [91820] - 08/09/22 12:33:16 - 0:00:50 - Kill
+INFO [91820] - 08/09/22 12:33:16 - 0:00:50 - Lost ammo: bullets (19 -> 18)
+INFO [91820] - 08/09/22 12:33:16 - 0:00:50 - Kill
+INFO [91820] - 08/09/22 12:33:16 - 0:00:50 - Lost ammo: bullets (18 -> 17)
+INFO [91820] - 08/09/22 12:33:16 - 0:00:50 - Kill
+INFO [91820] - 08/09/22 12:33:16 - 0:00:50 - Lost ammo: bullets (17 -> 16)
+INFO [91820] - 08/09/22 12:33:17 - 0:00:51 - Kill
+INFO [91820] - 08/09/22 12:33:17 - 0:00:51 - Lost ammo: bullets (16 -> 15)
+INFO [91820] - 08/09/22 12:33:17 - 0:00:52 - Kill
+INFO [91820] - 08/09/22 12:33:17 - 0:00:52 - Lost ammo: bullets (15 -> 14)
+INFO [91820] - 08/09/22 12:33:18 - 0:00:52 - Kill
+INFO [91820] - 08/09/22 12:33:18 - 0:00:52 - Lost ammo: bullets (14 -> 13)
+INFO [91820] - 08/09/22 12:33:19 - 0:00:53 - Kill
+INFO [91820] - 08/09/22 12:33:19 - 0:00:53 - Lost ammo: bullets (13 -> 12)
+INFO [91820] - 08/09/22 12:33:19 - 0:00:53 - Kill
+INFO [91820] - 08/09/22 12:33:19 - 0:00:53 - Lost ammo: bullets (12 -> 11)
+INFO [91820] - 08/09/22 12:33:19 - 0:00:54 - Kill
+INFO [91820] - 08/09/22 12:33:19 - 0:00:54 - Lost ammo: bullets (11 -> 10)
+INFO [91820] - 08/09/22 12:33:20 - 0:00:54 - Kill
+INFO [91820] - 08/09/22 12:33:20 - 0:00:54 - Lost ammo: bullets (10 -> 9)
+INFO [91820] - 08/09/22 12:33:20 - 0:00:54 - Kill
+INFO [91820] - 08/09/22 12:33:20 - 0:00:54 - Lost ammo: bullets (9 -> 8)
+INFO [91820] - 08/09/22 12:33:21 - 0:00:55 - Kill
+INFO [91820] - 08/09/22 12:33:21 - 0:00:55 - Lost ammo: bullets (8 -> 7)
+INFO [91820] - 08/09/22 12:33:22 - 0:00:56 - Kill
+INFO [91820] - 08/09/22 12:33:22 - 0:00:56 - Lost ammo: bullets (7 -> 6)
+INFO [91820] - 08/09/22 12:33:22 - 0:00:56 - Kill
+INFO [91820] - 08/09/22 12:33:22 - 0:00:56 - Lost ammo: bullets (6 -> 5)
+INFO [91820] - 08/09/22 12:33:23 - 0:00:57 - Kill
+INFO [91820] - 08/09/22 12:33:23 - 0:00:57 - Lost ammo: bullets (5 -> 4)
+INFO [91820] - 08/09/22 12:33:24 - 0:00:58 - Kill
+INFO [91820] - 08/09/22 12:33:24 - 0:00:58 - Lost ammo: bullets (4 -> 3)
+INFO [91820] - 08/09/22 12:33:24 - 0:00:58 - Kill
+INFO [91820] - 08/09/22 12:33:24 - 0:00:58 - Lost ammo: bullets (3 -> 2)
+INFO [91820] - 08/09/22 12:33:25 - 0:00:59 - Kill
+INFO [91820] - 08/09/22 12:33:25 - 0:00:59 - Lost ammo: bullets (2 -> 1)
+INFO [91820] - 08/09/22 12:33:25 - 0:00:59 - Kill
+INFO [91820] - 08/09/22 12:33:25 - 0:00:59 - Lost ammo: bullets (1 -> 0)
+INFO [91820] - 08/09/22 12:33:28 - 0:01:02 - Lost health (100 -> 84)
+INFO [91820] - 08/09/22 12:33:28 - 0:01:03 - Lost health (84 -> 80)
+INFO [91820] - 08/09/22 12:33:29 - 0:01:03 - Lost health (80 -> 76)
+INFO [91820] - 08/09/22 12:33:30 - 0:01:04 - Lost health (76 -> 68)
+INFO [91820] - 08/09/22 12:33:31 - 0:01:05 - Lost health (68 -> 52)
+INFO [91820] - 08/09/22 12:33:31 - 0:01:05 - Lost health (52 -> 36)
+INFO [91820] - 08/09/22 12:33:32 - 0:01:06 - Lost health (36 -> 20)
+INFO [91820] - 08/09/22 12:33:32 - 0:01:06 - Lost health (20 -> 16)
+INFO [91820] - 08/09/22 12:33:32 - 0:01:06 - Lost health (16 -> 2)
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - Dead
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - Lost health (2 -> -2)
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - 54 kills.
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - ===============
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - New episode
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - Kill
+INFO [91820] - 08/09/22 12:33:33 - 0:01:07 - Lost ammo: bullets (56 -> 55)
+INFO [91820] - 08/09/22 12:33:34 - 0:01:08 - Kill
+INFO [91820] - 08/09/22 12:33:34 - 0:01:08 - Lost ammo: bullets (55 -> 54)
+INFO [91820] - 08/09/22 12:33:34 - 0:01:08 - Kill
+INFO [91820] - 08/09/22 12:33:34 - 0:01:08 - Lost ammo: bullets (54 -> 53)
+INFO [91820] - 08/09/22 12:33:34 - 0:01:08 - Kill
+INFO [91820] - 08/09/22 12:33:34 - 0:01:08 - Lost ammo: bullets (53 -> 52)
+INFO [91820] - 08/09/22 12:33:35 - 0:01:09 - Kill
+INFO [91820] - 08/09/22 12:33:35 - 0:01:09 - Lost ammo: bullets (52 -> 51)
+INFO [91820] - 08/09/22 12:33:35 - 0:01:09 - Kill
+INFO [91820] - 08/09/22 12:33:35 - 0:01:09 - Lost ammo: bullets (51 -> 50)
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Kill
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Lost ammo: bullets (50 -> 49)
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Kill
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Lost ammo: bullets (49 -> 48)
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Kill
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Lost ammo: bullets (48 -> 47)
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Kill
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Lost ammo: bullets (47 -> 46)
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Kill
+INFO [91820] - 08/09/22 12:33:36 - 0:01:10 - Lost ammo: bullets (46 -> 45)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (45 -> 44)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (44 -> 43)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (43 -> 42)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (42 -> 41)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (41 -> 40)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (40 -> 39)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (39 -> 38)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (38 -> 37)
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Kill
+INFO [91820] - 08/09/22 12:33:37 - 0:01:11 - Lost ammo: bullets (37 -> 36)

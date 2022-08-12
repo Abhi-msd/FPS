@@ -1,0 +1,495 @@
+INFO [10167] - 08/10/22 14:57:08 - 0:00:00 - ========== Running DOOM ==========
+INFO [10167] - 08/10/22 14:57:08 - 0:00:00 - Experiment will be saved in: ./test/lxdogcl9lu
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - scenario: self_play
+                                             map_ids_train: [1]
+                                             map_ids_test: [7]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 0
+                                             game_features: target,enemy
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 6
+                                             frame_skip: 3
+                                             action_combinations: move_fb+move_lr;turn_lr;attack
+                                             freelook: False
+                                             speed: on
+                                             crouch: off
+                                             manual_control: True
+                                             players_per_game: 4
+                                             player_rank: 0
+                                             dump_path: ./test/lxdogcl9lu
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: True
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_rnn
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: lstm
+                                             n_rec_updates: 1
+                                             n_rec_layers: 1
+                                             remember: True
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [10, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.5
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: deathmatch_shotgun
+                                             n_bots: 0
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 2
+                                             n_fm: 4
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - 29 available actions:
+                                             ['ATTACK']
+                                             ['TURN_LEFT']
+                                             ['TURN_LEFT', 'ATTACK']
+                                             ['TURN_RIGHT']
+                                             ['TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_LEFT']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_RIGHT']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT']
+                                             ['MOVE_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_LEFT']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'ATTACK']
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - scenario: self_play
+                                             map_ids_train: [1]
+                                             map_ids_test: [7]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 0
+                                             game_features: target,enemy
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 6
+                                             frame_skip: 3
+                                             action_combinations: move_fb+move_lr;turn_lr;attack
+                                             freelook: False
+                                             speed: on
+                                             crouch: off
+                                             manual_control: True
+                                             players_per_game: 4
+                                             player_rank: 1
+                                             dump_path: ./test/lxdogcl9lu
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_rnn
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: lstm
+                                             n_rec_updates: 1
+                                             n_rec_layers: 1
+                                             remember: True
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [10, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.5
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: deathmatch_shotgun
+                                             n_bots: 0
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 2
+                                             n_fm: 4
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - Reward values:
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - 29 available actions:
+                                             ['ATTACK']
+                                             ['TURN_LEFT']
+                                             ['TURN_LEFT', 'ATTACK']
+                                             ['TURN_RIGHT']
+                                             ['TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_LEFT']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_RIGHT']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT']
+                                             ['MOVE_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_LEFT']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'ATTACK']
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - Input shape: (4, 60, 108)
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - Reward values:
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - scenario: self_play
+                                             map_ids_train: [1]
+                                             map_ids_test: [7]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 0
+                                             game_features: target,enemy
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 6
+                                             frame_skip: 3
+                                             action_combinations: move_fb+move_lr;turn_lr;attack
+                                             freelook: False
+                                             speed: on
+                                             crouch: off
+                                             manual_control: True
+                                             players_per_game: 4
+                                             player_rank: 2
+                                             dump_path: ./test/lxdogcl9lu
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_rnn
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: lstm
+                                             n_rec_updates: 1
+                                             n_rec_layers: 1
+                                             remember: True
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [10, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.5
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: deathmatch_shotgun
+                                             n_bots: 0
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 2
+                                             n_fm: 4
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - Input shape: (4, 60, 108)
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - 29 available actions:
+                                             ['ATTACK']
+                                             ['TURN_LEFT']
+                                             ['TURN_LEFT', 'ATTACK']
+                                             ['TURN_RIGHT']
+                                             ['TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_LEFT']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_RIGHT']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT']
+                                             ['MOVE_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_LEFT']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'ATTACK']
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - Reward values:
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - scenario: self_play
+                                             map_ids_train: [1]
+                                             map_ids_test: [7]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 0
+                                             game_features: target,enemy
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 6
+                                             frame_skip: 3
+                                             action_combinations: move_fb+move_lr;turn_lr;attack
+                                             freelook: False
+                                             speed: on
+                                             crouch: off
+                                             manual_control: True
+                                             players_per_game: 4
+                                             player_rank: 3
+                                             dump_path: ./test/lxdogcl9lu
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_rnn
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: lstm
+                                             n_rec_updates: 1
+                                             n_rec_layers: 1
+                                             remember: True
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [10, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.5
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: deathmatch_shotgun
+                                             n_bots: 0
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 2
+                                             n_fm: 4
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - Input shape: (4, 60, 108)
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - 29 available actions:
+                                             ['ATTACK']
+                                             ['TURN_LEFT']
+                                             ['TURN_LEFT', 'ATTACK']
+                                             ['TURN_RIGHT']
+                                             ['TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_LEFT']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_RIGHT']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT']
+                                             ['MOVE_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_LEFT']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'ATTACK']
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - Reward values:
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - Input shape: (4, 60, 108)
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - Conv layer output dim : 4608
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - Hidden layer input dim: 4672
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - Conv layer output dim : 4608
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - Conv layer output dim : 4608
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - Hidden layer input dim: 4672
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - Hidden layer input dim: 4672
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - Conv layer output dim : 4608
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - Hidden layer input dim: 4672
+INFO [10172] - 08/10/22 14:57:08 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth...
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth...
+INFO [10173] - 08/10/22 14:57:08 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth...
+INFO [10174] - 08/10/22 14:57:08 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/deathmatch_shotgun.pth...
+INFO [10171] - 08/10/22 14:57:08 - 0:00:00 - Evaluating the model...
+INFO [10171] - 08/10/22 14:57:09 - 0:00:01 - Evaluating on map 7 ...
+INFO [10173] - 08/10/22 14:57:09 - 0:00:01 - Evaluating the model...
+INFO [10172] - 08/10/22 14:57:09 - 0:00:01 - Evaluating the model...
+INFO [10174] - 08/10/22 14:57:09 - 0:00:01 - Evaluating the model...
+INFO [10173] - 08/10/22 14:57:09 - 0:00:01 - Evaluating on map 7 ...
+INFO [10172] - 08/10/22 14:57:09 - 0:00:01 - Evaluating on map 7 ...
+INFO [10174] - 08/10/22 14:57:09 - 0:00:01 - Evaluating on map 7 ...
+INFO [10174] - 08/10/22 14:57:11 - 0:00:03 - Found ammo: shells (20 -> 24)
+INFO [10172] - 08/10/22 14:57:11 - 0:00:03 - Lost ammo: shells (20 -> 18)
+INFO [10172] - 08/10/22 14:57:12 - 0:00:04 - Found ammo: shells (18 -> 38)
+INFO [10173] - 08/10/22 14:57:12 - 0:00:04 - Lost ammo: shells (20 -> 18)
+INFO [10174] - 08/10/22 14:57:13 - 0:00:05 - Lost ammo: shells (24 -> 22)
+INFO [10174] - 08/10/22 14:57:13 - 0:00:05 - Dead
+INFO [10174] - 08/10/22 14:57:13 - 0:00:05 - Lost health (100 -> 0)
+INFO [10172] - 08/10/22 14:57:13 - 0:00:05 - Lost ammo: shells (38 -> 36)
+INFO [10173] - 08/10/22 14:57:13 - 0:00:05 - Lost ammo: shells (18 -> 16)
+INFO [10174] - 08/10/22 14:57:14 - 0:00:06 - Respawn player
+INFO [10173] - 08/10/22 14:57:15 - 0:00:07 - Dead
+INFO [10173] - 08/10/22 14:57:15 - 0:00:07 - Lost health (100 -> -10)
+INFO [10172] - 08/10/22 14:57:15 - 0:00:07 - Lost ammo: shells (36 -> 34)
+INFO [10171] - 08/10/22 14:57:15 - 0:00:07 - Found ammo: shells (20 -> 40)
+INFO [10173] - 08/10/22 14:57:16 - 0:00:08 - Respawn player
+INFO [10172] - 08/10/22 14:57:16 - 0:00:08 - Lost ammo: shells (34 -> 32)
+INFO [10172] - 08/10/22 14:57:19 - 0:00:10 - Dead
+INFO [10172] - 08/10/22 14:57:19 - 0:00:10 - Lost health (100 -> 0)
+INFO [10173] - 08/10/22 14:57:19 - 0:00:11 - Lost ammo: shells (20 -> 18)
+INFO [10173] - 08/10/22 14:57:19 - 0:00:11 - Dead
+INFO [10173] - 08/10/22 14:57:19 - 0:00:11 - Lost health (100 -> 0)
+INFO [10174] - 08/10/22 14:57:19 - 0:00:11 - Lost ammo: shells (20 -> 18)
+INFO [10172] - 08/10/22 14:57:20 - 0:00:12 - Respawn player
+INFO [10173] - 08/10/22 14:57:20 - 0:00:12 - Respawn player
+INFO [10174] - 08/10/22 14:57:21 - 0:00:13 - Lost health (100 -> 50)
+INFO [10173] - 08/10/22 14:57:21 - 0:00:13 - Lost ammo: shells (20 -> 18)
+INFO [10174] - 08/10/22 14:57:21 - 0:00:13 - Lost ammo: shells (18 -> 16)
+INFO [10172] - 08/10/22 14:57:22 - 0:00:14 - Lost ammo: shells (20 -> 18)
+INFO [10174] - 08/10/22 14:57:23 - 0:00:15 - Dead
+INFO [10174] - 08/10/22 14:57:23 - 0:00:15 - Lost health (50 -> -10)
+INFO [10173] - 08/10/22 14:57:23 - 0:00:15 - Lost ammo: shells (18 -> 16)
+INFO [10171] - 08/10/22 14:57:24 - 0:00:16 - Lost ammo: shells (40 -> 38)
+INFO [10174] - 08/10/22 14:57:24 - 0:00:16 - Respawn player
+INFO [10172] - 08/10/22 14:57:25 - 0:00:16 - Lost ammo: shells (18 -> 16)
+INFO [10173] - 08/10/22 14:57:25 - 0:00:16 - Lost health (100 -> 10)
+INFO [10173] - 08/10/22 14:57:25 - 0:00:17 - Dead
+INFO [10173] - 08/10/22 14:57:25 - 0:00:17 - Lost health (10 -> -10)
+INFO [10172] - 08/10/22 14:57:25 - 0:00:17 - Lost health (100 -> 55)
+INFO [10174] - 08/10/22 14:57:25 - 0:00:17 - Lost ammo: shells (20 -> 18)
+INFO [10172] - 08/10/22 14:57:26 - 0:00:18 - Lost ammo: shells (16 -> 14)
+INFO [10173] - 08/10/22 14:57:26 - 0:00:18 - Respawn player
+INFO [10174] - 08/10/22 14:57:27 - 0:00:19 - Lost health (100 -> 15)
+INFO [10173] - 08/10/22 14:57:27 - 0:00:19 - Lost ammo: shells (20 -> 18)
+INFO [10174] - 08/10/22 14:57:28 - 0:00:20 - Lost ammo: shells (18 -> 16)
+INFO [10174] - 08/10/22 14:57:28 - 0:00:20 - Dead
+INFO [10174] - 08/10/22 14:57:28 - 0:00:20 - Lost health (15 -> 0)
+INFO [10172] - 08/10/22 14:57:28 - 0:00:20 - Lost ammo: shells (14 -> 12)
+INFO [10174] - 08/10/22 14:57:29 - 0:00:21 - Respawn player
+INFO [10172] - 08/10/22 14:57:29 - 0:00:21 - Dead
+INFO [10172] - 08/10/22 14:57:29 - 0:00:21 - Lost health (55 -> -5)
+INFO [10173] - 08/10/22 14:57:29 - 0:00:21 - Lost ammo: shells (18 -> 16)
+INFO [10172] - 08/10/22 14:57:30 - 0:00:22 - Respawn player
+INFO [10173] - 08/10/22 14:57:31 - 0:00:23 - Dead
+INFO [10173] - 08/10/22 14:57:31 - 0:00:23 - Lost health (100 -> -5)
+INFO [10174] - 08/10/22 14:57:31 - 0:00:23 - Lost ammo: shells (20 -> 18)
+INFO [10173] - 08/10/22 14:57:32 - 0:00:24 - Respawn player
+INFO [10174] - 08/10/22 14:57:32 - 0:00:24 - Lost health (100 -> 15)
+INFO [10172] - 08/10/22 14:57:32 - 0:00:24 - Lost ammo: shells (20 -> 18)
+INFO [10174] - 08/10/22 14:57:33 - 0:00:25 - Lost ammo: shells (18 -> 16)
+INFO [10172] - 08/10/22 14:57:33 - 0:00:25 - Lost health (100 -> 49)
+INFO [10174] - 08/10/22 14:57:34 - 0:00:26 - Dead
+INFO [10174] - 08/10/22 14:57:34 - 0:00:26 - Lost health (15 -> -5)
+INFO [10172] - 08/10/22 14:57:34 - 0:00:26 - Lost ammo: shells (18 -> 16)
+INFO [10171] - 08/10/22 14:57:34 - 0:00:26 - Lost ammo: shells (38 -> 36)
+INFO [10174] - 08/10/22 14:57:35 - 0:00:27 - Respawn player
+INFO [10171] - 08/10/22 14:57:35 - 0:00:27 - Dead
+INFO [10171] - 08/10/22 14:57:35 - 0:00:27 - Lost health (100 -> 0)
+INFO [10172] - 08/10/22 14:57:35 - 0:00:27 - Lost ammo: shells (16 -> 14)
+INFO [10171] - 08/10/22 14:57:37 - 0:00:29 - Respawn player
+INFO [10173] - 08/10/22 14:57:37 - 0:00:29 - Lost health (100 -> 5)
+INFO [10174] - 08/10/22 14:57:37 - 0:00:29 - Lost ammo: shells (20 -> 18)
+INFO [10173] - 08/10/22 14:57:37 - 0:00:29 - Lost ammo: shells (20 -> 18)
+INFO [10172] - 08/10/22 14:57:38 - 0:00:29 - Lost ammo: shells (14 -> 12)
+INFO [10173] - 08/10/22 14:57:39 - 0:00:31 - Dead
+INFO [10173] - 08/10/22 14:57:39 - 0:00:31 - Lost health (5 -> -10)
+INFO [10174] - 08/10/22 14:57:39 - 0:00:31 - Lost ammo: shells (18 -> 16)
+INFO [10174] - 08/10/22 14:57:39 - 0:00:31 - Dead
+INFO [10174] - 08/10/22 14:57:39 - 0:00:31 - Lost health (100 -> -10)
+INFO [10172] - 08/10/22 14:57:39 - 0:00:31 - Lost ammo: shells (12 -> 10)
+INFO [10173] - 08/10/22 14:57:40 - 0:00:32 - Respawn player
+INFO [10174] - 08/10/22 14:57:40 - 0:00:32 - Respawn player

@@ -1,0 +1,192 @@
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - ========== Running DOOM ==========
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Experiment will be saved in: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/g5aredt462
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - scenario: health_gathering
+                                             map_ids_train: [1]
+                                             map_ids_test: [1]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 
+                                             game_features: 
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 4
+                                             frame_skip: 4
+                                             action_combinations: move_fb;turn_lr
+                                             freelook: False
+                                             speed: off
+                                             crouch: off
+                                             manual_control: False
+                                             players_per_game: 1
+                                             player_rank: 0
+                                             dump_path: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/g5aredt462
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/health_gathering.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_ff
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: 
+                                             clip_delta: 1.0
+                                             variable_dim: [32]
+                                             bucket_size: [1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.0
+                                             optimizer: rmsprop,lr=0.0002
+                                             supreme: True
+                                             game_variables: [('health', 101)]
+                                             n_variables: 1
+                                             n_features: 0
+                                             n_fm: 3
+                                             use_continuous: False
+                                             episode_time: 120
+                                             eval_freq: 30000
+                                             eval_episodes: 20
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - 8 available actions:
+                                             ['TURN_LEFT']
+                                             ['TURN_RIGHT']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Reward values:
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - {'BASE_REWARD': 0.01, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1, 'ARMOR': 1.0, 'INJURED': 0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Input shape: (3, 60, 108)
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Conv layer output dim : 4608
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Hidden layer input dim: 4640
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/health_gathering.pth...
+INFO [91935] - 08/09/22 12:42:39 - 0:00:00 - Evaluating the model...
+INFO [91935] - 08/09/22 12:42:40 - 0:00:01 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:42:40 - 0:00:01 - Found health (84 -> 100)
+INFO [91935] - 08/09/22 12:42:40 - 0:00:02 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:41 - 0:00:02 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:42:42 - 0:00:03 - Lost health (84 -> 76)
+INFO [91935] - 08/09/22 12:42:42 - 0:00:03 - Found health (76 -> 96)
+INFO [91935] - 08/09/22 12:42:42 - 0:00:03 - Lost health (96 -> 88)
+INFO [91935] - 08/09/22 12:42:42 - 0:00:04 - Found health (88 -> 100)
+INFO [91935] - 08/09/22 12:42:43 - 0:00:04 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:43 - 0:00:04 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:44 - 0:00:05 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:44 - 0:00:06 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:42:45 - 0:00:06 - Lost health (84 -> 76)
+INFO [91935] - 08/09/22 12:42:45 - 0:00:06 - Found health (76 -> 96)
+INFO [91935] - 08/09/22 12:42:45 - 0:00:07 - Lost health (96 -> 88)
+INFO [91935] - 08/09/22 12:42:46 - 0:00:07 - Lost health (88 -> 80)
+INFO [91935] - 08/09/22 12:42:46 - 0:00:07 - Found health (80 -> 100)
+INFO [91935] - 08/09/22 12:42:46 - 0:00:08 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:47 - 0:00:08 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:42:47 - 0:00:08 - Found health (84 -> 100)
+INFO [91935] - 08/09/22 12:42:47 - 0:00:09 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:48 - 0:00:09 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:48 - 0:00:09 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:48 - 0:00:09 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:49 - 0:00:10 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:49 - 0:00:10 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:49 - 0:00:10 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:50 - 0:00:11 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:42:50 - 0:00:11 - Lost health (84 -> 54)
+INFO [91935] - 08/09/22 12:42:50 - 0:00:11 - Lost health (54 -> 46)
+INFO [91935] - 08/09/22 12:42:50 - 0:00:12 - Found health (46 -> 66)
+INFO [91935] - 08/09/22 12:42:51 - 0:00:12 - Lost health (66 -> 58)
+INFO [91935] - 08/09/22 12:42:51 - 0:00:12 - Lost health (58 -> 50)
+INFO [91935] - 08/09/22 12:42:52 - 0:00:13 - Lost health (50 -> 42)
+INFO [91935] - 08/09/22 12:42:52 - 0:00:14 - Lost health (42 -> 34)
+INFO [91935] - 08/09/22 12:42:53 - 0:00:14 - Lost health (34 -> 26)
+INFO [91935] - 08/09/22 12:42:53 - 0:00:15 - Lost health (26 -> 18)
+INFO [91935] - 08/09/22 12:42:54 - 0:00:15 - Lost health (18 -> 10)
+INFO [91935] - 08/09/22 12:42:54 - 0:00:15 - Found health (10 -> 30)
+INFO [91935] - 08/09/22 12:42:54 - 0:00:16 - Lost health (30 -> 22)
+INFO [91935] - 08/09/22 12:42:55 - 0:00:16 - Lost health (22 -> 14)
+INFO [91935] - 08/09/22 12:42:55 - 0:00:17 - Lost health (14 -> 6)
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - Found health (6 -> 26)
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - Lost health (26 -> 18)
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - Dead
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - Suicide
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - Lost health (18 -> -5)
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - Survived for 1001 steps.
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - ===============
+INFO [91935] - 08/09/22 12:42:56 - 0:00:17 - New episode
+INFO [91935] - 08/09/22 12:42:57 - 0:00:18 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:42:57 - 0:00:18 - Found health (84 -> 100)
+INFO [91935] - 08/09/22 12:42:57 - 0:00:18 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:58 - 0:00:19 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:58 - 0:00:19 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:58 - 0:00:19 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:58 - 0:00:19 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:58 - 0:00:20 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:59 - 0:00:20 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:42:59 - 0:00:20 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:42:59 - 0:00:21 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:00 - 0:00:21 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:43:00 - 0:00:22 - Found health (84 -> 96)
+INFO [91935] - 08/09/22 12:43:01 - 0:00:22 - Lost health (96 -> 88)
+INFO [91935] - 08/09/22 12:43:01 - 0:00:23 - Lost health (88 -> 80)
+INFO [91935] - 08/09/22 12:43:02 - 0:00:23 - Found health (80 -> 100)
+INFO [91935] - 08/09/22 12:43:02 - 0:00:23 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:03 - 0:00:24 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:43:03 - 0:00:24 - Lost health (84 -> 76)
+INFO [91935] - 08/09/22 12:43:03 - 0:00:25 - Found health (76 -> 96)
+INFO [91935] - 08/09/22 12:43:04 - 0:00:25 - Lost health (96 -> 88)
+INFO [91935] - 08/09/22 12:43:04 - 0:00:25 - Found health (88 -> 100)
+INFO [91935] - 08/09/22 12:43:04 - 0:00:25 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:04 - 0:00:25 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:43:05 - 0:00:26 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:05 - 0:00:26 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:43:05 - 0:00:26 - Lost health (100 -> 70)
+INFO [91935] - 08/09/22 12:43:05 - 0:00:26 - Lost health (70 -> 62)
+INFO [91935] - 08/09/22 12:43:05 - 0:00:27 - Found health (62 -> 82)
+INFO [91935] - 08/09/22 12:43:06 - 0:00:27 - Lost health (82 -> 74)
+INFO [91935] - 08/09/22 12:43:06 - 0:00:27 - Lost health (74 -> 44)
+INFO [91935] - 08/09/22 12:43:06 - 0:00:27 - Found health (44 -> 64)
+INFO [91935] - 08/09/22 12:43:06 - 0:00:27 - Lost health (64 -> 56)
+INFO [91935] - 08/09/22 12:43:07 - 0:00:28 - Found health (56 -> 76)
+INFO [91935] - 08/09/22 12:43:07 - 0:00:28 - Lost health (76 -> 68)
+INFO [91935] - 08/09/22 12:43:07 - 0:00:28 - Found health (68 -> 88)
+INFO [91935] - 08/09/22 12:43:07 - 0:00:29 - Lost health (88 -> 80)
+INFO [91935] - 08/09/22 12:43:08 - 0:00:29 - Found health (80 -> 100)
+INFO [91935] - 08/09/22 12:43:08 - 0:00:29 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:08 - 0:00:29 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:43:08 - 0:00:30 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:09 - 0:00:30 - Found health (92 -> 100)
+INFO [91935] - 08/09/22 12:43:09 - 0:00:30 - Lost health (100 -> 92)
+INFO [91935] - 08/09/22 12:43:09 - 0:00:31 - Lost health (92 -> 84)
+INFO [91935] - 08/09/22 12:43:10 - 0:00:31 - Lost health (84 -> 54)
+INFO [91935] - 08/09/22 12:43:10 - 0:00:31 - Lost health (54 -> 46)
+INFO [91935] - 08/09/22 12:43:11 - 0:00:32 - Lost health (46 -> 38)
+INFO [91935] - 08/09/22 12:43:11 - 0:00:32 - Found health (38 -> 58)
+INFO [91935] - 08/09/22 12:43:11 - 0:00:32 - Lost health (58 -> 50)
+INFO [91935] - 08/09/22 12:43:11 - 0:00:33 - Found health (50 -> 70)
+INFO [91935] - 08/09/22 12:43:12 - 0:00:33 - Found health (70 -> 82)
+INFO [91935] - 08/09/22 12:43:12 - 0:00:33 - Lost health (82 -> 52)
+INFO [91935] - 08/09/22 12:43:12 - 0:00:33 - Lost health (52 -> 44)
+INFO [91935] - 08/09/22 12:43:13 - 0:00:34 - Lost health (44 -> 36)
+INFO [91935] - 08/09/22 12:43:13 - 0:00:34 - Lost health (36 -> 6)
+INFO [91935] - 08/09/22 12:43:13 - 0:00:34 - Found health (6 -> 26)
+INFO [91935] - 08/09/22 12:43:13 - 0:00:34 - Lost health (26 -> 18)
+INFO [91935] - 08/09/22 12:43:15 - 0:00:36 - Found health (18 -> 38)
+INFO [91935] - 08/09/22 12:43:15 - 0:00:36 - Lost health (38 -> 30)
+INFO [91935] - 08/09/22 12:43:15 - 0:00:36 - Lost health (30 -> 22)
+INFO [91935] - 08/09/22 12:43:15 - 0:00:37 - Found health (22 -> 42)
+INFO [91935] - 08/09/22 12:43:16 - 0:00:37 - Lost health (42 -> 34)
+INFO [91935] - 08/09/22 12:43:16 - 0:00:37 - Found health (34 -> 54)
+INFO [91935] - 08/09/22 12:43:16 - 0:00:37 - Lost health (54 -> 46)
+INFO [91935] - 08/09/22 12:43:16 - 0:00:38 - Found health (46 -> 66)
+INFO [91935] - 08/09/22 12:43:17 - 0:00:38 - Lost health (66 -> 58)

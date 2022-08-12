@@ -1,0 +1,529 @@
+INFO [92476] - 08/09/22 13:25:26 - 0:00:00 - ========== Running DOOM ==========
+INFO [92476] - 08/09/22 13:25:26 - 0:00:00 - Experiment will be saved in: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/vhdswldbh9
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - scenario: self_play
+                                             map_ids_train: [1]
+                                             map_ids_test: [1]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 
+                                             game_features: target,enemy
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 4
+                                             frame_skip: 3
+                                             action_combinations: attack+move_lr;turn_lr;move_fb
+                                             freelook: False
+                                             speed: on
+                                             crouch: off
+                                             manual_control: True
+                                             players_per_game: 1
+                                             player_rank: 0
+                                             dump_path: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/vhdswldbh9
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/vizdoom_2017_track1.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_rnn
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: lstm
+                                             n_rec_updates: 1
+                                             n_rec_layers: 1
+                                             remember: True
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [10, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.5
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: deathmatch_rockets
+                                             n_bots: 10
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 2
+                                             n_fm: 3
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - 35 available actions:
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_BACKWARD']
+                                             ['TURN_LEFT']
+                                             ['TURN_LEFT', 'MOVE_FORWARD']
+                                             ['TURN_LEFT', 'MOVE_BACKWARD']
+                                             ['TURN_RIGHT']
+                                             ['TURN_RIGHT', 'MOVE_FORWARD']
+                                             ['TURN_RIGHT', 'MOVE_BACKWARD']
+                                             ['ATTACK']
+                                             ['ATTACK', 'MOVE_FORWARD']
+                                             ['ATTACK', 'MOVE_BACKWARD']
+                                             ['ATTACK', 'TURN_LEFT']
+                                             ['ATTACK', 'TURN_LEFT', 'MOVE_FORWARD']
+                                             ['ATTACK', 'TURN_LEFT', 'MOVE_BACKWARD']
+                                             ['ATTACK', 'TURN_RIGHT']
+                                             ['ATTACK', 'TURN_RIGHT', 'MOVE_FORWARD']
+                                             ['ATTACK', 'TURN_RIGHT', 'MOVE_BACKWARD']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_LEFT', 'MOVE_FORWARD']
+                                             ['MOVE_LEFT', 'MOVE_BACKWARD']
+                                             ['MOVE_LEFT', 'TURN_LEFT']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'MOVE_FORWARD']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'MOVE_BACKWARD']
+                                             ['MOVE_LEFT', 'TURN_RIGHT']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'MOVE_FORWARD']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'MOVE_BACKWARD']
+                                             ['MOVE_RIGHT']
+                                             ['MOVE_RIGHT', 'MOVE_FORWARD']
+                                             ['MOVE_RIGHT', 'MOVE_BACKWARD']
+                                             ['MOVE_RIGHT', 'TURN_LEFT']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'MOVE_FORWARD']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'MOVE_BACKWARD']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'MOVE_FORWARD']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'MOVE_BACKWARD']
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Reward values:
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Input shape: (3, 60, 108)
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Conv layer output dim : 4608
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Hidden layer input dim: 4672
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/vizdoom_2017_track1.pth...
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Evaluating the model...
+INFO [92481] - 08/09/22 13:25:26 - 0:00:00 - Evaluating on map 1 ...
+INFO [92481] - 08/09/22 13:25:29 - 0:00:02 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:29 - 0:00:02 - Kill
+INFO [92481] - 08/09/22 13:25:29 - 0:00:03 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:29 - 0:00:03 - Kill
+INFO [92481] - 08/09/22 13:25:30 - 0:00:03 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:25:30 - 0:00:04 - Dead
+INFO [92481] - 08/09/22 13:25:30 - 0:00:04 - Lost health (100 -> -40)
+INFO [92481] - 08/09/22 13:25:30 - 0:00:04 - Respawn player
+INFO [92481] - 08/09/22 13:25:31 - 0:00:05 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:31 - 0:00:05 - Kill
+INFO [92481] - 08/09/22 13:25:31 - 0:00:05 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:31 - 0:00:05 - Kill
+INFO [92481] - 08/09/22 13:25:33 - 0:00:07 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:25:33 - 0:00:07 - Kill
+INFO [92481] - 08/09/22 13:25:34 - 0:00:07 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:25:34 - 0:00:07 - Kill
+INFO [92481] - 08/09/22 13:25:34 - 0:00:08 - Dead
+INFO [92481] - 08/09/22 13:25:34 - 0:00:08 - Lost health (100 -> -31)
+INFO [92481] - 08/09/22 13:25:34 - 0:00:08 - Respawn player
+INFO [92481] - 08/09/22 13:25:35 - 0:00:08 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:35 - 0:00:08 - Kill
+INFO [92481] - 08/09/22 13:25:35 - 0:00:09 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:36 - 0:00:10 - Kill
+INFO [92481] - 08/09/22 13:25:36 - 0:00:10 - Lost health (100 -> 78)
+INFO [92481] - 08/09/22 13:25:36 - 0:00:10 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:25:37 - 0:00:11 - Found health (78 -> 100)
+INFO [92481] - 08/09/22 13:25:37 - 0:00:11 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:25:38 - 0:00:12 - Kill
+INFO [92481] - 08/09/22 13:25:38 - 0:00:12 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:25:39 - 0:00:13 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:25:40 - 0:00:13 - Kill
+INFO [92481] - 08/09/22 13:25:40 - 0:00:14 - Dead
+INFO [92481] - 08/09/22 13:25:40 - 0:00:14 - Lost health (100 -> -33)
+INFO [92481] - 08/09/22 13:25:40 - 0:00:14 - Respawn player
+INFO [92481] - 08/09/22 13:25:41 - 0:00:15 - Found armor (0 -> 100)
+INFO [92481] - 08/09/22 13:25:41 - 0:00:15 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:41 - 0:00:15 - Kill
+INFO [92481] - 08/09/22 13:25:41 - 0:00:15 - Found armor (100 -> 200)
+INFO [92481] - 08/09/22 13:25:42 - 0:00:15 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:42 - 0:00:16 - Kill
+INFO [92481] - 08/09/22 13:25:42 - 0:00:16 - Kill
+INFO [92481] - 08/09/22 13:25:42 - 0:00:16 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:25:42 - 0:00:16 - Kill
+INFO [92481] - 08/09/22 13:25:42 - 0:00:16 - Lost health (100 -> 22)
+INFO [92481] - 08/09/22 13:25:42 - 0:00:16 - Lost armor (200 -> 123)
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Kill
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Dead
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Suicide
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Lost health (22 -> -25)
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Lost armor (123 -> 77)
+INFO [92481] - 08/09/22 13:25:43 - 0:00:17 - Respawn player
+INFO [92481] - 08/09/22 13:25:47 - 0:00:20 - Dead
+INFO [92481] - 08/09/22 13:25:47 - 0:00:20 - Lost health (100 -> -20)
+INFO [92481] - 08/09/22 13:25:47 - 0:00:20 - Respawn player
+INFO [92481] - 08/09/22 13:25:47 - 0:00:21 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:47 - 0:00:21 - Kill
+INFO [92481] - 08/09/22 13:25:48 - 0:00:21 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:48 - 0:00:21 - Kill
+INFO [92481] - 08/09/22 13:25:48 - 0:00:22 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:25:48 - 0:00:22 - Kill
+INFO [92481] - 08/09/22 13:25:48 - 0:00:22 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:25:50 - 0:00:23 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:25:50 - 0:00:23 - Kill
+INFO [92481] - 08/09/22 13:25:50 - 0:00:24 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:25:51 - 0:00:25 - Kill
+INFO [92481] - 08/09/22 13:25:52 - 0:00:26 - Lost health (100 -> 93)
+INFO [92481] - 08/09/22 13:25:53 - 0:00:27 - Lost ammo: rockets (9 -> 8)
+INFO [92481] - 08/09/22 13:25:53 - 0:00:27 - Kill
+INFO [92481] - 08/09/22 13:25:54 - 0:00:28 - Lost ammo: rockets (8 -> 7)
+INFO [92481] - 08/09/22 13:25:55 - 0:00:28 - Dead
+INFO [92481] - 08/09/22 13:25:55 - 0:00:28 - Lost health (93 -> -27)
+INFO [92481] - 08/09/22 13:25:55 - 0:00:28 - Respawn player
+INFO [92481] - 08/09/22 13:25:55 - 0:00:29 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:55 - 0:00:29 - Kill
+INFO [92481] - 08/09/22 13:25:56 - 0:00:30 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:57 - 0:00:30 - Kill
+INFO [92481] - 08/09/22 13:25:57 - 0:00:30 - Lost health (100 -> 82)
+INFO [92481] - 08/09/22 13:25:57 - 0:00:31 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:25:57 - 0:00:31 - Lost health (82 -> 80)
+INFO [92481] - 08/09/22 13:25:57 - 0:00:31 - Dead
+INFO [92481] - 08/09/22 13:25:57 - 0:00:31 - Lost health (80 -> -105)
+INFO [92481] - 08/09/22 13:25:57 - 0:00:31 - Respawn player
+INFO [92481] - 08/09/22 13:25:59 - 0:00:32 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:25:59 - 0:00:32 - Found armor (0 -> 100)
+INFO [92481] - 08/09/22 13:25:59 - 0:00:33 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:25:59 - 0:00:33 - Kill
+INFO [92481] - 08/09/22 13:25:59 - 0:00:33 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:00 - 0:00:34 - Dead
+INFO [92481] - 08/09/22 13:26:00 - 0:00:34 - Lost health (100 -> -44)
+INFO [92481] - 08/09/22 13:26:00 - 0:00:34 - Lost armor (100 -> 29)
+INFO [92481] - 08/09/22 13:26:00 - 0:00:34 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:00 - 0:00:34 - Respawn player
+INFO [92481] - 08/09/22 13:26:01 - 0:00:35 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:01 - 0:00:35 - Kill
+INFO [92481] - 08/09/22 13:26:01 - 0:00:35 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:02 - 0:00:35 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:02 - 0:00:36 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:02 - 0:00:36 - Kill
+INFO [92481] - 08/09/22 13:26:02 - 0:00:36 - Dead
+INFO [92481] - 08/09/22 13:26:02 - 0:00:36 - Lost health (100 -> -47)
+INFO [92481] - 08/09/22 13:26:02 - 0:00:36 - Respawn player
+INFO [92481] - 08/09/22 13:26:03 - 0:00:37 - Kill
+INFO [92481] - 08/09/22 13:26:03 - 0:00:37 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:04 - 0:00:38 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:04 - 0:00:38 - Kill
+INFO [92481] - 08/09/22 13:26:05 - 0:00:39 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:05 - 0:00:39 - Kill
+INFO [92481] - 08/09/22 13:26:06 - 0:00:39 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:06 - 0:00:39 - Kill
+INFO [92481] - 08/09/22 13:26:06 - 0:00:39 - Lost health (100 -> 69)
+INFO [92481] - 08/09/22 13:26:07 - 0:00:40 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:26:07 - 0:00:40 - Kill
+INFO [92481] - 08/09/22 13:26:07 - 0:00:40 - Lost health (69 -> 67)
+INFO [92481] - 08/09/22 13:26:08 - 0:00:41 - Found health (67 -> 92)
+INFO [92481] - 08/09/22 13:26:08 - 0:00:42 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:26:08 - 0:00:42 - Kill
+INFO [92481] - 08/09/22 13:26:09 - 0:00:43 - Lost ammo: rockets (9 -> 8)
+INFO [92481] - 08/09/22 13:26:09 - 0:00:43 - Dead
+INFO [92481] - 08/09/22 13:26:09 - 0:00:43 - Lost health (92 -> -48)
+INFO [92481] - 08/09/22 13:26:09 - 0:00:43 - Respawn player
+INFO [92481] - 08/09/22 13:26:11 - 0:00:44 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:11 - 0:00:45 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:11 - 0:00:45 - Kill
+INFO [92481] - 08/09/22 13:26:12 - 0:00:46 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:12 - 0:00:46 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:12 - 0:00:46 - Dead
+INFO [92481] - 08/09/22 13:26:12 - 0:00:46 - Lost health (100 -> -40)
+INFO [92481] - 08/09/22 13:26:12 - 0:00:46 - Respawn player
+INFO [92481] - 08/09/22 13:26:13 - 0:00:47 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:14 - 0:00:47 - Found armor (0 -> 200)
+INFO [92481] - 08/09/22 13:26:14 - 0:00:48 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:14 - 0:00:48 - Kill
+INFO [92481] - 08/09/22 13:26:14 - 0:00:48 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:14 - 0:00:48 - Kill
+INFO [92481] - 08/09/22 13:26:15 - 0:00:48 - Lost health (100 -> 56)
+INFO [92481] - 08/09/22 13:26:15 - 0:00:48 - Lost armor (200 -> 157)
+INFO [92481] - 08/09/22 13:26:15 - 0:00:49 - Dead
+INFO [92481] - 08/09/22 13:26:15 - 0:00:49 - Lost health (56 -> -47)
+INFO [92481] - 08/09/22 13:26:15 - 0:00:49 - Lost armor (157 -> 55)
+INFO [92481] - 08/09/22 13:26:15 - 0:00:49 - Respawn player
+INFO [92481] - 08/09/22 13:26:16 - 0:00:50 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:16 - 0:00:50 - Kill
+INFO [92481] - 08/09/22 13:26:17 - 0:00:51 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:18 - 0:00:51 - Kill
+INFO [92481] - 08/09/22 13:26:18 - 0:00:51 - Kill
+INFO [92481] - 08/09/22 13:26:18 - 0:00:51 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:20 - 0:00:54 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:20 - 0:00:54 - Kill
+INFO [92481] - 08/09/22 13:26:20 - 0:00:54 - Dead
+INFO [92481] - 08/09/22 13:26:20 - 0:00:54 - Lost health (100 -> -7)
+INFO [92481] - 08/09/22 13:26:20 - 0:00:54 - Respawn player
+INFO [92481] - 08/09/22 13:26:21 - 0:00:55 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:23 - 0:00:57 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:24 - 0:00:57 - Kill
+INFO [92481] - 08/09/22 13:26:24 - 0:00:57 - Lost health (100 -> 14)
+INFO [92481] - 08/09/22 13:26:25 - 0:00:59 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:26 - 0:01:00 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:27 - 0:01:00 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:26:27 - 0:01:01 - Kill
+INFO [92481] - 08/09/22 13:26:27 - 0:01:01 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:26:28 - 0:01:01 - Kill
+INFO [92481] - 08/09/22 13:26:28 - 0:01:02 - Lost ammo: rockets (9 -> 8)
+INFO [92481] - 08/09/22 13:26:28 - 0:01:02 - Found health (14 -> 39)
+INFO [92481] - 08/09/22 13:26:29 - 0:01:03 - Lost ammo: rockets (8 -> 7)
+INFO [92481] - 08/09/22 13:26:29 - 0:01:03 - Found health (39 -> 64)
+INFO [92481] - 08/09/22 13:26:29 - 0:01:03 - Lost ammo: rockets (7 -> 6)
+INFO [92481] - 08/09/22 13:26:29 - 0:01:03 - Kill
+INFO [92481] - 08/09/22 13:26:30 - 0:01:03 - Lost ammo: rockets (6 -> 5)
+INFO [92481] - 08/09/22 13:26:30 - 0:01:04 - Kill
+INFO [92481] - 08/09/22 13:26:30 - 0:01:04 - Lost health (64 -> 50)
+INFO [92481] - 08/09/22 13:26:31 - 0:01:05 - Lost health (50 -> 44)
+INFO [92481] - 08/09/22 13:26:31 - 0:01:05 - Lost health (44 -> 30)
+INFO [92481] - 08/09/22 13:26:31 - 0:01:05 - Dead
+INFO [92481] - 08/09/22 13:26:31 - 0:01:05 - Lost health (30 -> -10)
+INFO [92481] - 08/09/22 13:26:31 - 0:01:05 - Respawn player
+INFO [92481] - 08/09/22 13:26:33 - 0:01:06 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:33 - 0:01:06 - Kill
+INFO [92481] - 08/09/22 13:26:33 - 0:01:07 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:33 - 0:01:07 - Dead
+INFO [92481] - 08/09/22 13:26:33 - 0:01:07 - Suicide
+INFO [92481] - 08/09/22 13:26:33 - 0:01:07 - Lost health (100 -> -26)
+INFO [92481] - 08/09/22 13:26:33 - 0:01:07 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:33 - 0:01:07 - Respawn player
+INFO [92481] - 08/09/22 13:26:34 - 0:01:08 - Kill
+INFO [92481] - 08/09/22 13:26:34 - 0:01:08 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:35 - 0:01:08 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:35 - 0:01:09 - Kill
+INFO [92481] - 08/09/22 13:26:36 - 0:01:09 - Lost health (100 -> 61)
+INFO [92481] - 08/09/22 13:26:36 - 0:01:10 - Dead
+INFO [92481] - 08/09/22 13:26:36 - 0:01:10 - Lost health (61 -> -99)
+INFO [92481] - 08/09/22 13:26:36 - 0:01:10 - Respawn player
+INFO [92481] - 08/09/22 13:26:36 - 0:01:10 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:36 - 0:01:10 - Kill
+INFO [92481] - 08/09/22 13:26:38 - 0:01:11 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:38 - 0:01:12 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:38 - 0:01:12 - Kill
+INFO [92481] - 08/09/22 13:26:38 - 0:01:12 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:26:38 - 0:01:12 - Kill
+INFO [92481] - 08/09/22 13:26:40 - 0:01:13 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:26:40 - 0:01:14 - Kill
+INFO [92481] - 08/09/22 13:26:40 - 0:01:14 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:26:41 - 0:01:15 - Lost ammo: rockets (9 -> 8)
+INFO [92481] - 08/09/22 13:26:41 - 0:01:15 - Kill
+INFO [92481] - 08/09/22 13:26:42 - 0:01:16 - Lost ammo: rockets (8 -> 7)
+INFO [92481] - 08/09/22 13:26:42 - 0:01:16 - Kill
+INFO [92481] - 08/09/22 13:26:44 - 0:01:18 - Lost ammo: rockets (7 -> 6)
+INFO [92481] - 08/09/22 13:26:44 - 0:01:18 - Kill
+INFO [92481] - 08/09/22 13:26:45 - 0:01:18 - Lost ammo: rockets (6 -> 5)
+INFO [92481] - 08/09/22 13:26:45 - 0:01:19 - Kill
+INFO [92481] - 08/09/22 13:26:45 - 0:01:19 - Lost health (100 -> 83)
+INFO [92481] - 08/09/22 13:26:47 - 0:01:20 - Lost ammo: rockets (5 -> 4)
+INFO [92481] - 08/09/22 13:26:47 - 0:01:21 - Kill
+INFO [92481] - 08/09/22 13:26:47 - 0:01:21 - Lost health (83 -> 81)
+INFO [92481] - 08/09/22 13:26:47 - 0:01:21 - Lost ammo: rockets (4 -> 3)
+INFO [92481] - 08/09/22 13:26:47 - 0:01:21 - Kill
+INFO [92481] - 08/09/22 13:26:48 - 0:01:21 - Lost health (81 -> 70)
+INFO [92481] - 08/09/22 13:26:49 - 0:01:22 - Found ammo: rockets (3 -> 4)
+INFO [92481] - 08/09/22 13:26:49 - 0:01:22 - Found ammo: rockets (4 -> 6)
+INFO [92481] - 08/09/22 13:26:50 - 0:01:24 - Found health (70 -> 95)
+INFO [92481] - 08/09/22 13:26:50 - 0:01:24 - Lost ammo: rockets (6 -> 5)
+INFO [92481] - 08/09/22 13:26:50 - 0:01:24 - Kill
+INFO [92481] - 08/09/22 13:26:51 - 0:01:25 - Lost ammo: rockets (5 -> 4)
+INFO [92481] - 08/09/22 13:26:51 - 0:01:25 - Kill
+INFO [92481] - 08/09/22 13:26:53 - 0:01:26 - Found health (95 -> 100)
+INFO [92481] - 08/09/22 13:26:55 - 0:01:28 - Lost ammo: rockets (4 -> 3)
+INFO [92481] - 08/09/22 13:26:55 - 0:01:29 - Kill
+INFO [92481] - 08/09/22 13:26:56 - 0:01:29 - Lost ammo: rockets (3 -> 2)
+INFO [92481] - 08/09/22 13:26:56 - 0:01:30 - Kill
+INFO [92481] - 08/09/22 13:26:56 - 0:01:30 - Lost health (100 -> 68)
+INFO [92481] - 08/09/22 13:26:56 - 0:01:30 - Dead
+INFO [92481] - 08/09/22 13:26:56 - 0:01:30 - Lost health (68 -> -63)
+INFO [92481] - 08/09/22 13:26:56 - 0:01:30 - Respawn player
+INFO [92481] - 08/09/22 13:26:57 - 0:01:30 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:26:57 - 0:01:30 - Kill
+INFO [92481] - 08/09/22 13:26:58 - 0:01:32 - Found armor (0 -> 100)
+INFO [92481] - 08/09/22 13:26:58 - 0:01:32 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:26:58 - 0:01:32 - Kill
+INFO [92481] - 08/09/22 13:26:59 - 0:01:32 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Lost health (100 -> 78)
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Lost armor (100 -> 90)
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Kill
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Dead
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Lost health (78 -> -2)
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Lost armor (90 -> 50)
+INFO [92481] - 08/09/22 13:26:59 - 0:01:33 - Respawn player
+INFO [92481] - 08/09/22 13:27:00 - 0:01:33 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:00 - 0:01:34 - Kill
+INFO [92481] - 08/09/22 13:27:00 - 0:01:34 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:02 - 0:01:35 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:02 - 0:01:36 - Kill
+INFO [92481] - 08/09/22 13:27:02 - 0:01:36 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:27:03 - 0:01:37 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:27:03 - 0:01:37 - Lost health (100 -> 32)
+INFO [92481] - 08/09/22 13:27:03 - 0:01:37 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:27:04 - 0:01:37 - Kill
+INFO [92481] - 08/09/22 13:27:04 - 0:01:38 - Lost ammo: rockets (9 -> 8)
+INFO [92481] - 08/09/22 13:27:04 - 0:01:38 - Dead
+INFO [92481] - 08/09/22 13:27:04 - 0:01:38 - Lost health (32 -> -48)
+INFO [92481] - 08/09/22 13:27:04 - 0:01:38 - Respawn player
+INFO [92481] - 08/09/22 13:27:05 - 0:01:38 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:05 - 0:01:39 - Kill
+INFO [92481] - 08/09/22 13:27:06 - 0:01:40 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:06 - 0:01:40 - Kill
+INFO [92481] - 08/09/22 13:27:06 - 0:01:40 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:06 - 0:01:40 - Dead
+INFO [92481] - 08/09/22 13:27:06 - 0:01:40 - Lost health (100 -> 0)
+INFO [92481] - 08/09/22 13:27:06 - 0:01:40 - Respawn player
+INFO [92481] - 08/09/22 13:27:08 - 0:01:41 - Found armor (0 -> 100)
+INFO [92481] - 08/09/22 13:27:08 - 0:01:41 - Found armor (100 -> 200)
+INFO [92481] - 08/09/22 13:27:08 - 0:01:42 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:08 - 0:01:42 - Kill
+INFO [92481] - 08/09/22 13:27:09 - 0:01:42 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:09 - 0:01:43 - Kill
+INFO [92481] - 08/09/22 13:27:09 - 0:01:43 - Lost health (100 -> 65)
+INFO [92481] - 08/09/22 13:27:09 - 0:01:43 - Lost armor (200 -> 166)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:43 - Found ammo: rockets (13 -> 14)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:43 - Found ammo: rockets (14 -> 15)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:44 - Found ammo: rockets (15 -> 16)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:44 - Found health (65 -> 90)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:44 - Lost health (90 -> 21)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:44 - Lost armor (166 -> 97)
+INFO [92481] - 08/09/22 13:27:10 - 0:01:44 - Lost ammo: rockets (16 -> 15)
+INFO [92481] - 08/09/22 13:27:11 - 0:01:44 - Kill
+INFO [92481] - 08/09/22 13:27:11 - 0:01:45 - Lost health (21 -> 16)
+INFO [92481] - 08/09/22 13:27:11 - 0:01:45 - Lost armor (97 -> 93)
+INFO [92481] - 08/09/22 13:27:12 - 0:01:45 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:12 - 0:01:45 - Kill
+INFO [92481] - 08/09/22 13:27:12 - 0:01:46 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:12 - 0:01:46 - Kill
+INFO [92481] - 08/09/22 13:27:14 - 0:01:47 - Found health (16 -> 41)
+INFO [92481] - 08/09/22 13:27:15 - 0:01:49 - Found health (41 -> 66)
+INFO [92481] - 08/09/22 13:27:15 - 0:01:49 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:16 - 0:01:50 - Kill
+INFO [92481] - 08/09/22 13:27:16 - 0:01:50 - Kill
+INFO [92481] - 08/09/22 13:27:16 - 0:01:50 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:27:17 - 0:01:50 - Kill
+INFO [92481] - 08/09/22 13:27:17 - 0:01:51 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:27:17 - 0:01:51 - Found ammo: rockets (10 -> 13)
+INFO [92481] - 08/09/22 13:27:19 - 0:01:52 - Found health (66 -> 91)
+INFO [92481] - 08/09/22 13:27:19 - 0:01:52 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:19 - 0:01:53 - Kill
+INFO [92481] - 08/09/22 13:27:20 - 0:01:53 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:27:20 - 0:01:54 - Kill
+INFO [92481] - 08/09/22 13:27:20 - 0:01:54 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:27:21 - 0:01:55 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:27:21 - 0:01:55 - Lost ammo: rockets (9 -> 8)
+INFO [92481] - 08/09/22 13:27:22 - 0:01:56 - Kill
+INFO [92481] - 08/09/22 13:27:22 - 0:01:56 - Lost health (91 -> 83)
+INFO [92481] - 08/09/22 13:27:22 - 0:01:56 - Lost armor (93 -> 85)
+INFO [92481] - 08/09/22 13:27:23 - 0:01:56 - Found health (83 -> 100)
+INFO [92481] - 08/09/22 13:27:23 - 0:01:57 - Lost ammo: rockets (8 -> 7)
+INFO [92481] - 08/09/22 13:27:23 - 0:01:57 - Kill
+INFO [92481] - 08/09/22 13:27:23 - 0:01:57 - Lost ammo: rockets (7 -> 6)
+INFO [92481] - 08/09/22 13:27:25 - 0:01:59 - Lost ammo: rockets (6 -> 5)
+INFO [92481] - 08/09/22 13:27:25 - 0:01:59 - Kill
+INFO [92481] - 08/09/22 13:27:25 - 0:01:59 - Lost health (100 -> 76)
+INFO [92481] - 08/09/22 13:27:25 - 0:01:59 - Lost armor (85 -> 61)
+INFO [92481] - 08/09/22 13:27:26 - 0:02:00 - Lost ammo: rockets (5 -> 4)
+INFO [92481] - 08/09/22 13:27:26 - 0:02:00 - Kill
+INFO [92481] - 08/09/22 13:27:26 - 0:02:00 - Lost health (76 -> 9)
+INFO [92481] - 08/09/22 13:27:26 - 0:02:00 - Lost armor (61 -> 0)
+INFO [92481] - 08/09/22 13:27:27 - 0:02:00 - Lost ammo: rockets (4 -> 3)
+INFO [92481] - 08/09/22 13:27:27 - 0:02:00 - Kill
+INFO [92481] - 08/09/22 13:27:27 - 0:02:00 - Dead
+INFO [92481] - 08/09/22 13:27:27 - 0:02:00 - Suicide
+INFO [92481] - 08/09/22 13:27:27 - 0:02:00 - Lost health (9 -> -13)
+INFO [92481] - 08/09/22 13:27:27 - 0:02:00 - Respawn player
+INFO [92481] - 08/09/22 13:27:28 - 0:02:01 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:28 - 0:02:01 - Kill
+INFO [92481] - 08/09/22 13:27:31 - 0:02:04 - Lost health (100 -> 29)
+INFO [92481] - 08/09/22 13:27:31 - 0:02:05 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:31 - 0:02:05 - Found health (29 -> 54)
+INFO [92481] - 08/09/22 13:27:31 - 0:02:05 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:32 - 0:02:05 - Kill
+INFO [92481] - 08/09/22 13:27:32 - 0:02:05 - Dead
+INFO [92481] - 08/09/22 13:27:32 - 0:02:05 - Lost health (54 -> -14)
+INFO [92481] - 08/09/22 13:27:32 - 0:02:05 - Respawn player
+INFO [92481] - 08/09/22 13:27:32 - 0:02:06 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:32 - 0:02:06 - Kill
+INFO [92481] - 08/09/22 13:27:34 - 0:02:08 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:34 - 0:02:08 - Kill
+INFO [92481] - 08/09/22 13:27:34 - 0:02:08 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:34 - 0:02:08 - Kill
+INFO [92481] - 08/09/22 13:27:36 - 0:02:10 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:27:37 - 0:02:10 - Kill
+INFO [92481] - 08/09/22 13:27:37 - 0:02:10 - Dead
+INFO [92481] - 08/09/22 13:27:37 - 0:02:10 - Lost health (100 -> -35)
+INFO [92481] - 08/09/22 13:27:37 - 0:02:10 - Respawn player
+INFO [92481] - 08/09/22 13:27:37 - 0:02:11 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:37 - 0:02:11 - Kill
+INFO [92481] - 08/09/22 13:27:38 - 0:02:11 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:39 - 0:02:13 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:39 - 0:02:13 - Kill
+INFO [92481] - 08/09/22 13:27:39 - 0:02:13 - Dead
+INFO [92481] - 08/09/22 13:27:39 - 0:02:13 - Lost health (100 -> -77)
+INFO [92481] - 08/09/22 13:27:39 - 0:02:13 - Respawn player
+INFO [92481] - 08/09/22 13:27:40 - 0:02:13 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:40 - 0:02:13 - Kill
+INFO [92481] - 08/09/22 13:27:41 - 0:02:14 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:41 - 0:02:15 - Found armor (0 -> 100)
+INFO [92481] - 08/09/22 13:27:41 - 0:02:15 - Kill
+INFO [92481] - 08/09/22 13:27:41 - 0:02:15 - Lost health (100 -> 95)
+INFO [92481] - 08/09/22 13:27:41 - 0:02:15 - Found armor (100 -> 195)
+INFO [92481] - 08/09/22 13:27:42 - 0:02:16 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:42 - 0:02:16 - Dead
+INFO [92481] - 08/09/22 13:27:42 - 0:02:16 - Lost health (95 -> -2)
+INFO [92481] - 08/09/22 13:27:42 - 0:02:16 - Lost armor (195 -> 98)
+INFO [92481] - 08/09/22 13:27:42 - 0:02:16 - Respawn player
+INFO [92481] - 08/09/22 13:27:44 - 0:02:18 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:44 - 0:02:18 - Kill
+INFO [92481] - 08/09/22 13:27:44 - 0:02:18 - Dead
+INFO [92481] - 08/09/22 13:27:44 - 0:02:18 - Suicide
+INFO [92481] - 08/09/22 13:27:44 - 0:02:18 - Lost health (100 -> -79)
+INFO [92481] - 08/09/22 13:27:44 - 0:02:18 - Respawn player
+INFO [92481] - 08/09/22 13:27:45 - 0:02:18 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:45 - 0:02:18 - Kill
+INFO [92481] - 08/09/22 13:27:47 - 0:02:20 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:47 - 0:02:21 - Kill
+INFO [92481] - 08/09/22 13:27:48 - 0:02:21 - Found ammo: rockets (13 -> 15)
+INFO [92481] - 08/09/22 13:27:48 - 0:02:21 - Found ammo: rockets (15 -> 16)
+INFO [92481] - 08/09/22 13:27:48 - 0:02:22 - Found ammo: rockets (16 -> 17)
+INFO [92481] - 08/09/22 13:27:48 - 0:02:22 - Found ammo: rockets (17 -> 18)
+INFO [92481] - 08/09/22 13:27:49 - 0:02:23 - Lost ammo: rockets (18 -> 17)
+INFO [92481] - 08/09/22 13:27:50 - 0:02:23 - Lost ammo: rockets (17 -> 16)
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Kill
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Lost ammo: rockets (16 -> 15)
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Kill
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Lost health (100 -> 84)
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Dead
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Suicide
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Lost health (84 -> -24)
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:50 - 0:02:24 - Respawn player
+INFO [92481] - 08/09/22 13:27:51 - 0:02:25 - Kill
+INFO [92481] - 08/09/22 13:27:51 - 0:02:25 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:52 - 0:02:26 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:53 - 0:02:27 - Lost health (100 -> 90)
+INFO [92481] - 08/09/22 13:27:53 - 0:02:27 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:53 - 0:02:27 - Kill
+INFO [92481] - 08/09/22 13:27:54 - 0:02:28 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:27:54 - 0:02:28 - Kill
+INFO [92481] - 08/09/22 13:27:54 - 0:02:28 - Lost health (90 -> 4)
+INFO [92481] - 08/09/22 13:27:54 - 0:02:28 - Dead
+INFO [92481] - 08/09/22 13:27:54 - 0:02:28 - Lost health (4 -> -16)
+INFO [92481] - 08/09/22 13:27:54 - 0:02:28 - Respawn player
+INFO [92481] - 08/09/22 13:27:55 - 0:02:28 - Lost ammo: rockets (15 -> 14)
+INFO [92481] - 08/09/22 13:27:55 - 0:02:29 - Lost ammo: rockets (14 -> 13)
+INFO [92481] - 08/09/22 13:27:55 - 0:02:29 - Kill
+INFO [92481] - 08/09/22 13:27:56 - 0:02:30 - Lost ammo: rockets (13 -> 12)
+INFO [92481] - 08/09/22 13:27:57 - 0:02:31 - Kill
+INFO [92481] - 08/09/22 13:27:57 - 0:02:31 - Lost ammo: rockets (12 -> 11)
+INFO [92481] - 08/09/22 13:27:57 - 0:02:31 - Kill
+INFO [92481] - 08/09/22 13:27:57 - 0:02:31 - Lost health (100 -> 96)
+INFO [92481] - 08/09/22 13:27:57 - 0:02:31 - Lost ammo: rockets (11 -> 10)
+INFO [92481] - 08/09/22 13:27:58 - 0:02:31 - Kill
+INFO [92481] - 08/09/22 13:27:58 - 0:02:32 - Lost ammo: rockets (10 -> 9)
+INFO [92481] - 08/09/22 13:27:58 - 0:02:32 - Kill

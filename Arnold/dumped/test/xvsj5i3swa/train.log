@@ -1,0 +1,544 @@
+INFO [93533] - 08/09/22 14:13:11 - 0:00:00 - ========== Running DOOM ==========
+INFO [93533] - 08/09/22 14:13:11 - 0:00:00 - Experiment will be saved in: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/xvsj5i3swa
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - scenario: self_play
+                                             map_ids_train: [1]
+                                             map_ids_test: [3]
+                                             freedoom: True
+                                             height: 60
+                                             width: 108
+                                             gray: False
+                                             use_screen_buffer: True
+                                             use_depth_buffer: False
+                                             labels_mapping: 
+                                             game_features: target,enemy
+                                             render_hud: False
+                                             render_crosshair: True
+                                             render_weapon: True
+                                             hist_size: 4
+                                             frame_skip: 4
+                                             action_combinations: move_fb+move_lr;turn_lr;attack
+                                             freelook: False
+                                             speed: on
+                                             crouch: off
+                                             manual_control: True
+                                             players_per_game: 1
+                                             player_rank: 0
+                                             dump_path: /Users/abhishekpal/Desktop/vizdoom/Arnold/dumped/test/xvsj5i3swa
+                                             visualize: True
+                                             evaluate: 1
+                                             human_player: False
+                                             reload: /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/vizdoom_2017_track2.pth
+                                             dump_freq: 0
+                                             gpu_id: -1
+                                             log_frequency: 100
+                                             network_type: dqn_rnn
+                                             use_bn: False
+                                             batch_size: 32
+                                             replay_memory_size: 1000000
+                                             start_decay: 0
+                                             stop_decay: 1000000
+                                             final_decay: 0.1
+                                             gamma: 0.99
+                                             dueling_network: False
+                                             recurrence: lstm
+                                             n_rec_updates: 1
+                                             n_rec_layers: 1
+                                             remember: True
+                                             clip_delta: 1.0
+                                             variable_dim: [32, 32]
+                                             bucket_size: [10, 1]
+                                             hidden_dim: 512
+                                             update_frequency: 4
+                                             dropout: 0.5
+                                             optimizer: rmsprop,lr=0.0002
+                                             wad: full_deathmatch
+                                             n_bots: 3
+                                             reward_values: 
+                                             randomize_textures: False
+                                             init_bots_health: 100
+                                             game_variables: [('health', 101), ('sel_ammo', 301)]
+                                             n_variables: 2
+                                             n_features: 2
+                                             n_fm: 3
+                                             use_continuous: False
+                                             episode_time: None
+                                             eval_freq: 20000
+                                             eval_time: 900
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - 9 available buttons: ['MOVE_FORWARD', 'MOVE_BACKWARD', 'TURN_LEFT', 'TURN_RIGHT', 'MOVE_LEFT', 'MOVE_RIGHT', 'ATTACK', 'SPEED', 'CROUCH']
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - 29 available actions:
+                                             ['ATTACK']
+                                             ['TURN_LEFT']
+                                             ['TURN_LEFT', 'ATTACK']
+                                             ['TURN_RIGHT']
+                                             ['TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_FORWARD']
+                                             ['MOVE_FORWARD', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_LEFT']
+                                             ['MOVE_FORWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT']
+                                             ['MOVE_FORWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_BACKWARD']
+                                             ['MOVE_BACKWARD', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT']
+                                             ['MOVE_BACKWARD', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT']
+                                             ['MOVE_BACKWARD', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_LEFT']
+                                             ['MOVE_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_LEFT']
+                                             ['MOVE_LEFT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_LEFT', 'TURN_RIGHT']
+                                             ['MOVE_LEFT', 'TURN_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT']
+                                             ['MOVE_RIGHT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_LEFT']
+                                             ['MOVE_RIGHT', 'TURN_LEFT', 'ATTACK']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT']
+                                             ['MOVE_RIGHT', 'TURN_RIGHT', 'ATTACK']
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Reward values:
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - {'BASE_REWARD': 0.0, 'DISTANCE': 0.0, 'KILL': 5.0, 'DEATH': -5.0, 'SUICIDE': -5.0, 'MEDIKIT': 1.0, 'ARMOR': 1.0, 'INJURED': -1.0, 'WEAPON': 1.0, 'AMMO': 1.0, 'USE_AMMO': -0.2}
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Input shape: (3, 60, 108)
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Conv layer output dim : 4608
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Hidden layer input dim: 4672
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Reloading model from /Users/abhishekpal/Desktop/vizdoom/Arnold/pretrained/vizdoom_2017_track2.pth...
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Evaluating the model...
+INFO [93537] - 08/09/22 14:13:11 - 0:00:00 - Evaluating on map 3 ...
+INFO [93537] - 08/09/22 14:13:14 - 0:00:03 - Lost health (100 -> 85)
+INFO [93537] - 08/09/22 14:13:15 - 0:00:04 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:13:15 - 0:00:04 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:13:15 - 0:00:05 - Lost health (85 -> 80)
+INFO [93537] - 08/09/22 14:13:16 - 0:00:05 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:13:16 - 0:00:05 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:13:16 - 0:00:05 - Lost health (80 -> 75)
+INFO [93537] - 08/09/22 14:13:16 - 0:00:05 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:13:16 - 0:00:06 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:13:17 - 0:00:06 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:13:17 - 0:00:06 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:13:17 - 0:00:06 - Lost health (75 -> 70)
+INFO [93537] - 08/09/22 14:13:17 - 0:00:06 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:13:17 - 0:00:07 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:13:18 - 0:00:07 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:13:18 - 0:00:07 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:13:18 - 0:00:08 - Kill
+INFO [93537] - 08/09/22 14:13:18 - 0:00:08 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:13:19 - 0:00:08 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:13:19 - 0:00:09 - Lost ammo: bullets (36 -> 35)
+INFO [93537] - 08/09/22 14:13:21 - 0:00:11 - Found health (70 -> 95)
+INFO [93537] - 08/09/22 14:13:21 - 0:00:11 - Lost ammo: bullets (35 -> 34)
+INFO [93537] - 08/09/22 14:13:22 - 0:00:11 - Lost ammo: bullets (34 -> 33)
+INFO [93537] - 08/09/22 14:13:22 - 0:00:12 - Lost ammo: bullets (33 -> 32)
+INFO [93537] - 08/09/22 14:13:23 - 0:00:12 - Lost ammo: bullets (32 -> 31)
+INFO [93537] - 08/09/22 14:13:23 - 0:00:12 - Lost ammo: bullets (31 -> 30)
+INFO [93537] - 08/09/22 14:13:23 - 0:00:12 - Lost ammo: bullets (30 -> 29)
+INFO [93537] - 08/09/22 14:13:23 - 0:00:13 - Lost health (95 -> 85)
+INFO [93537] - 08/09/22 14:13:23 - 0:00:13 - Lost ammo: bullets (29 -> 28)
+INFO [93537] - 08/09/22 14:13:24 - 0:00:13 - Lost ammo: bullets (28 -> 27)
+INFO [93537] - 08/09/22 14:13:24 - 0:00:13 - Lost health (85 -> 75)
+INFO [93537] - 08/09/22 14:13:24 - 0:00:13 - Lost ammo: bullets (27 -> 26)
+INFO [93537] - 08/09/22 14:13:24 - 0:00:13 - Lost ammo: bullets (26 -> 25)
+INFO [93537] - 08/09/22 14:13:24 - 0:00:14 - Lost ammo: bullets (25 -> 24)
+INFO [93537] - 08/09/22 14:13:24 - 0:00:14 - Lost health (75 -> 65)
+INFO [93537] - 08/09/22 14:13:25 - 0:00:14 - Lost ammo: bullets (24 -> 23)
+INFO [93537] - 08/09/22 14:13:25 - 0:00:14 - Lost ammo: bullets (23 -> 22)
+INFO [93537] - 08/09/22 14:13:25 - 0:00:14 - Lost ammo: bullets (22 -> 21)
+INFO [93537] - 08/09/22 14:13:25 - 0:00:14 - Lost health (65 -> 50)
+INFO [93537] - 08/09/22 14:13:25 - 0:00:15 - Lost health (50 -> 45)
+INFO [93537] - 08/09/22 14:13:25 - 0:00:15 - Lost ammo: bullets (21 -> 20)
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Lost health (45 -> 35)
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Lost ammo: bullets (20 -> 19)
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Kill
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Found weapon: RocketLauncher
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Lost ammo: bullets (19 -> 18)
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Found ammo: cells (0 -> 100)
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:15 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:16 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:16 - Manual weapon change: Pistol -> plasmarifle
+INFO [93537] - 08/09/22 14:13:26 - 0:00:16 - Switched weapon: Pistol -> PlasmaRifle
+INFO [93537] - 08/09/22 14:13:27 - 0:00:16 - Lost ammo: cells (100 -> 99)
+INFO [93537] - 08/09/22 14:13:27 - 0:00:16 - Lost ammo: cells (99 -> 98)
+INFO [93537] - 08/09/22 14:13:27 - 0:00:16 - Lost health (35 -> 30)
+INFO [93537] - 08/09/22 14:13:27 - 0:00:17 - Lost ammo: cells (98 -> 96)
+INFO [93537] - 08/09/22 14:13:28 - 0:00:17 - Kill
+INFO [93537] - 08/09/22 14:13:28 - 0:00:17 - Lost ammo: cells (96 -> 95)
+INFO [93537] - 08/09/22 14:13:28 - 0:00:17 - Lost ammo: cells (95 -> 94)
+INFO [93537] - 08/09/22 14:13:30 - 0:00:19 - Found armor (0 -> 100)
+INFO [93537] - 08/09/22 14:13:39 - 0:00:28 - Lost ammo: cells (94 -> 92)
+INFO [93537] - 08/09/22 14:13:41 - 0:00:30 - Lost health (30 -> 26)
+INFO [93537] - 08/09/22 14:13:41 - 0:00:30 - Lost armor (100 -> 99)
+INFO [93537] - 08/09/22 14:13:45 - 0:00:34 - Lost health (26 -> 22)
+INFO [93537] - 08/09/22 14:13:45 - 0:00:34 - Lost armor (99 -> 98)
+INFO [93537] - 08/09/22 14:13:47 - 0:00:36 - Lost ammo: cells (92 -> 90)
+INFO [93537] - 08/09/22 14:13:47 - 0:00:36 - Lost ammo: cells (90 -> 89)
+INFO [93537] - 08/09/22 14:13:47 - 0:00:36 - Lost ammo: cells (89 -> 88)
+INFO [93537] - 08/09/22 14:13:47 - 0:00:36 - Kill
+INFO [93537] - 08/09/22 14:13:47 - 0:00:36 - Lost ammo: cells (88 -> 86)
+INFO [93537] - 08/09/22 14:13:47 - 0:00:36 - Lost ammo: cells (86 -> 85)
+INFO [93537] - 08/09/22 14:13:48 - 0:00:38 - Found ammo: bullets (18 -> 28)
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Found weapon: Pistol
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Found ammo: shells (0 -> 20)
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Manual weapon change: PlasmaRifle -> shotgun
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Manual weapon change: PlasmaRifle -> shotgun
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Manual weapon change: PlasmaRifle -> shotgun
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Manual weapon change: PlasmaRifle -> shotgun
+INFO [93537] - 08/09/22 14:13:49 - 0:00:38 - Switched weapon: PlasmaRifle -> SuperShotgun
+INFO [93537] - 08/09/22 14:13:50 - 0:00:39 - Lost ammo: shells (20 -> 18)
+INFO [93537] - 08/09/22 14:13:52 - 0:00:42 - Lost health (22 -> 18)
+INFO [93537] - 08/09/22 14:13:52 - 0:00:42 - Lost armor (98 -> 97)
+INFO [93537] - 08/09/22 14:13:55 - 0:00:44 - Lost ammo: shells (18 -> 16)
+INFO [93537] - 08/09/22 14:13:56 - 0:00:45 - Lost health (18 -> 8)
+INFO [93537] - 08/09/22 14:13:56 - 0:00:45 - Lost armor (97 -> 92)
+INFO [93537] - 08/09/22 14:13:56 - 0:00:45 - Kill
+INFO [93537] - 08/09/22 14:13:56 - 0:00:45 - Lost ammo: shells (16 -> 14)
+INFO [93537] - 08/09/22 14:13:58 - 0:00:47 - Lost ammo: shells (14 -> 12)
+INFO [93537] - 08/09/22 14:13:58 - 0:00:47 - Dead
+INFO [93537] - 08/09/22 14:13:58 - 0:00:47 - Suicide
+INFO [93537] - 08/09/22 14:13:58 - 0:00:47 - Lost health (8 -> -53)
+INFO [93537] - 08/09/22 14:13:58 - 0:00:47 - Lost armor (92 -> 62)
+INFO [93537] - 08/09/22 14:13:58 - 0:00:47 - Respawn player
+INFO [93537] - 08/09/22 14:13:59 - 0:00:48 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:13:59 - 0:00:48 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:14:00 - 0:00:50 - Found ammo: rockets (0 -> 1)
+INFO [93537] - 08/09/22 14:14:01 - 0:00:50 - Lost health (100 -> 90)
+INFO [93537] - 08/09/22 14:14:01 - 0:00:50 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:14:01 - 0:00:51 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:14:01 - 0:00:51 - Lost health (90 -> 75)
+INFO [93537] - 08/09/22 14:14:02 - 0:00:51 - Lost health (75 -> 70)
+INFO [93537] - 08/09/22 14:14:02 - 0:00:51 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:14:02 - 0:00:51 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:14:02 - 0:00:51 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:14:02 - 0:00:52 - Kill
+INFO [93537] - 08/09/22 14:14:02 - 0:00:52 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:14:02 - 0:00:52 - Lost health (70 -> 55)
+INFO [93537] - 08/09/22 14:14:03 - 0:00:52 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:14:03 - 0:00:52 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:14:03 - 0:00:53 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:14:04 - 0:00:53 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:14:04 - 0:00:53 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:14:04 - 0:00:53 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:14:04 - 0:00:54 - Kill
+INFO [93537] - 08/09/22 14:14:04 - 0:00:54 - Lost ammo: bullets (36 -> 35)
+INFO [93537] - 08/09/22 14:14:05 - 0:00:54 - Lost ammo: bullets (35 -> 34)
+INFO [93537] - 08/09/22 14:14:05 - 0:00:54 - Lost ammo: bullets (34 -> 33)
+INFO [93537] - 08/09/22 14:14:05 - 0:00:54 - Lost ammo: bullets (33 -> 32)
+INFO [93537] - 08/09/22 14:14:05 - 0:00:55 - Lost health (55 -> 45)
+INFO [93537] - 08/09/22 14:14:05 - 0:00:55 - Lost ammo: bullets (32 -> 31)
+INFO [93537] - 08/09/22 14:14:05 - 0:00:55 - Lost health (45 -> 40)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:55 - Lost ammo: bullets (31 -> 30)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:55 - Lost ammo: bullets (30 -> 29)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:55 - Lost health (40 -> 35)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:55 - Lost health (35 -> 20)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:55 - Lost ammo: bullets (29 -> 28)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:56 - Lost health (20 -> 5)
+INFO [93537] - 08/09/22 14:14:06 - 0:00:56 - Lost ammo: bullets (28 -> 27)
+INFO [93537] - 08/09/22 14:14:07 - 0:00:56 - Lost ammo: bullets (27 -> 26)
+INFO [93537] - 08/09/22 14:14:07 - 0:00:56 - Lost ammo: bullets (26 -> 25)
+INFO [93537] - 08/09/22 14:14:07 - 0:00:56 - Kill
+INFO [93537] - 08/09/22 14:14:07 - 0:00:56 - Lost ammo: bullets (25 -> 24)
+INFO [93537] - 08/09/22 14:14:08 - 0:00:57 - Lost ammo: bullets (24 -> 23)
+INFO [93537] - 08/09/22 14:14:08 - 0:00:57 - Dead
+INFO [93537] - 08/09/22 14:14:08 - 0:00:57 - Lost health (5 -> -10)
+INFO [93537] - 08/09/22 14:14:08 - 0:00:57 - Respawn player
+INFO [93537] - 08/09/22 14:14:09 - 0:00:58 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:14:09 - 0:00:58 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:14:11 - 0:01:00 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:14:11 - 0:01:00 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:14:11 - 0:01:00 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:14:11 - 0:01:01 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:14:12 - 0:01:01 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:14:12 - 0:01:01 - Lost health (100 -> 95)
+INFO [93537] - 08/09/22 14:14:12 - 0:01:01 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:14:12 - 0:01:01 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:14:12 - 0:01:02 - Lost health (95 -> 80)
+INFO [93537] - 08/09/22 14:14:12 - 0:01:02 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:14:13 - 0:01:02 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:14:13 - 0:01:02 - Kill
+INFO [93537] - 08/09/22 14:14:13 - 0:01:02 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:14:14 - 0:01:03 - Lost health (80 -> 75)
+INFO [93537] - 08/09/22 14:14:14 - 0:01:03 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:14:14 - 0:01:03 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:14:14 - 0:01:04 - Lost ammo: bullets (36 -> 35)
+INFO [93537] - 08/09/22 14:14:15 - 0:01:04 - Lost ammo: bullets (35 -> 34)
+INFO [93537] - 08/09/22 14:14:15 - 0:01:04 - Lost health (75 -> 70)
+INFO [93537] - 08/09/22 14:14:15 - 0:01:04 - Lost ammo: bullets (34 -> 33)
+INFO [93537] - 08/09/22 14:14:15 - 0:01:05 - Lost ammo: bullets (33 -> 32)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:05 - Lost health (70 -> 65)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:05 - Lost health (65 -> 60)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:05 - Lost ammo: bullets (32 -> 31)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:05 - Lost ammo: bullets (31 -> 30)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:05 - Lost health (60 -> 55)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:05 - Lost ammo: bullets (30 -> 29)
+INFO [93537] - 08/09/22 14:14:16 - 0:01:06 - Lost ammo: bullets (29 -> 28)
+INFO [93537] - 08/09/22 14:14:17 - 0:01:06 - Lost ammo: bullets (28 -> 27)
+INFO [93537] - 08/09/22 14:14:17 - 0:01:06 - Lost ammo: bullets (27 -> 26)
+INFO [93537] - 08/09/22 14:14:17 - 0:01:06 - Lost health (55 -> 45)
+INFO [93537] - 08/09/22 14:14:17 - 0:01:07 - Lost ammo: bullets (26 -> 25)
+INFO [93537] - 08/09/22 14:14:18 - 0:01:07 - Kill
+INFO [93537] - 08/09/22 14:14:18 - 0:01:07 - Lost ammo: bullets (25 -> 24)
+INFO [93537] - 08/09/22 14:14:18 - 0:01:07 - Lost health (45 -> 40)
+INFO [93537] - 08/09/22 14:14:18 - 0:01:07 - Lost ammo: bullets (24 -> 23)
+INFO [93537] - 08/09/22 14:14:18 - 0:01:07 - Lost ammo: bullets (23 -> 22)
+INFO [93537] - 08/09/22 14:14:18 - 0:01:08 - Lost health (40 -> 35)
+INFO [93537] - 08/09/22 14:14:18 - 0:01:08 - Lost ammo: bullets (22 -> 21)
+INFO [93537] - 08/09/22 14:14:19 - 0:01:08 - Kill
+INFO [93537] - 08/09/22 14:14:19 - 0:01:08 - Lost health (35 -> 30)
+INFO [93537] - 08/09/22 14:14:19 - 0:01:08 - Lost ammo: bullets (21 -> 20)
+INFO [93537] - 08/09/22 14:14:19 - 0:01:09 - Lost ammo: bullets (20 -> 19)
+INFO [93537] - 08/09/22 14:14:19 - 0:01:09 - Lost ammo: bullets (19 -> 18)
+INFO [93537] - 08/09/22 14:14:20 - 0:01:09 - Kill
+INFO [93537] - 08/09/22 14:14:20 - 0:01:09 - Lost ammo: bullets (18 -> 17)
+INFO [93537] - 08/09/22 14:14:21 - 0:01:10 - Lost health (30 -> 25)
+INFO [93537] - 08/09/22 14:14:21 - 0:01:11 - Found health (25 -> 50)
+INFO [93537] - 08/09/22 14:14:22 - 0:01:11 - Lost ammo: bullets (17 -> 16)
+INFO [93537] - 08/09/22 14:14:22 - 0:01:11 - Lost ammo: bullets (16 -> 15)
+INFO [93537] - 08/09/22 14:14:22 - 0:01:11 - Lost health (50 -> 40)
+INFO [93537] - 08/09/22 14:14:22 - 0:01:11 - Lost ammo: bullets (15 -> 14)
+INFO [93537] - 08/09/22 14:14:22 - 0:01:12 - Lost ammo: bullets (14 -> 13)
+INFO [93537] - 08/09/22 14:14:23 - 0:01:12 - Lost ammo: bullets (13 -> 12)
+INFO [93537] - 08/09/22 14:14:23 - 0:01:12 - Lost ammo: bullets (12 -> 11)
+INFO [93537] - 08/09/22 14:14:23 - 0:01:13 - Lost ammo: bullets (11 -> 10)
+INFO [93537] - 08/09/22 14:14:23 - 0:01:13 - Lost ammo: bullets (10 -> 9)
+INFO [93537] - 08/09/22 14:14:24 - 0:01:13 - Lost ammo: bullets (9 -> 8)
+INFO [93537] - 08/09/22 14:14:24 - 0:01:13 - Lost ammo: bullets (8 -> 7)
+INFO [93537] - 08/09/22 14:14:24 - 0:01:13 - Lost health (40 -> 25)
+INFO [93537] - 08/09/22 14:14:24 - 0:01:13 - Lost health (25 -> 10)
+INFO [93537] - 08/09/22 14:14:24 - 0:01:14 - Lost ammo: bullets (7 -> 6)
+INFO [93537] - 08/09/22 14:14:24 - 0:01:14 - Kill
+INFO [93537] - 08/09/22 14:14:24 - 0:01:14 - Lost ammo: bullets (6 -> 5)
+INFO [93537] - 08/09/22 14:14:25 - 0:01:14 - Lost ammo: bullets (5 -> 4)
+INFO [93537] - 08/09/22 14:14:27 - 0:01:16 - Dead
+INFO [93537] - 08/09/22 14:14:27 - 0:01:16 - Lost health (10 -> -5)
+INFO [93537] - 08/09/22 14:14:27 - 0:01:16 - Respawn player
+INFO [93537] - 08/09/22 14:14:28 - 0:01:17 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:14:28 - 0:01:17 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:14:28 - 0:01:18 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:14:29 - 0:01:18 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:14:29 - 0:01:18 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:14:29 - 0:01:18 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:14:29 - 0:01:19 - Lost health (100 -> 95)
+INFO [93537] - 08/09/22 14:14:30 - 0:01:19 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:14:30 - 0:01:19 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:14:30 - 0:01:19 - Lost health (95 -> 80)
+INFO [93537] - 08/09/22 14:14:30 - 0:01:19 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:14:30 - 0:01:20 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:14:30 - 0:01:20 - Lost health (80 -> 65)
+INFO [93537] - 08/09/22 14:14:31 - 0:01:20 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:14:31 - 0:01:20 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:14:31 - 0:01:20 - Kill
+INFO [93537] - 08/09/22 14:14:31 - 0:01:20 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:14:31 - 0:01:21 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:14:32 - 0:01:21 - Lost ammo: bullets (36 -> 35)
+INFO [93537] - 08/09/22 14:14:32 - 0:01:21 - Found ammo: bullets (35 -> 45)
+INFO [93537] - 08/09/22 14:14:32 - 0:01:21 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:14:32 - 0:01:22 - Lost health (65 -> 50)
+INFO [93537] - 08/09/22 14:14:32 - 0:01:22 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:14:33 - 0:01:22 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:14:33 - 0:01:22 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:14:33 - 0:01:22 - Lost health (50 -> 35)
+INFO [93537] - 08/09/22 14:14:33 - 0:01:22 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:14:33 - 0:01:23 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:14:34 - 0:01:23 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:14:34 - 0:01:23 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:14:34 - 0:01:23 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:14:34 - 0:01:24 - Kill
+INFO [93537] - 08/09/22 14:14:34 - 0:01:24 - Lost ammo: bullets (36 -> 35)
+INFO [93537] - 08/09/22 14:14:35 - 0:01:24 - Lost health (35 -> 30)
+INFO [93537] - 08/09/22 14:14:35 - 0:01:24 - Lost ammo: bullets (35 -> 34)
+INFO [93537] - 08/09/22 14:14:37 - 0:01:26 - Lost health (30 -> 15)
+INFO [93537] - 08/09/22 14:14:38 - 0:01:27 - Lost ammo: bullets (34 -> 33)
+INFO [93537] - 08/09/22 14:14:38 - 0:01:28 - Found armor (0 -> 100)
+INFO [93537] - 08/09/22 14:14:39 - 0:01:28 - Lost ammo: bullets (33 -> 32)
+INFO [93537] - 08/09/22 14:14:39 - 0:01:28 - Lost ammo: bullets (32 -> 31)
+INFO [93537] - 08/09/22 14:14:40 - 0:01:29 - Lost ammo: bullets (31 -> 30)
+INFO [93537] - 08/09/22 14:14:40 - 0:01:30 - Lost ammo: bullets (30 -> 29)
+INFO [93537] - 08/09/22 14:14:41 - 0:01:30 - Lost ammo: bullets (29 -> 28)
+INFO [93537] - 08/09/22 14:14:41 - 0:01:30 - Lost ammo: bullets (28 -> 27)
+INFO [93537] - 08/09/22 14:14:41 - 0:01:30 - Lost health (15 -> 8)
+INFO [93537] - 08/09/22 14:14:41 - 0:01:30 - Lost armor (100 -> 97)
+INFO [93537] - 08/09/22 14:14:41 - 0:01:30 - Lost ammo: bullets (27 -> 26)
+INFO [93537] - 08/09/22 14:14:41 - 0:01:31 - Lost ammo: bullets (26 -> 25)
+INFO [93537] - 08/09/22 14:14:42 - 0:01:31 - Lost ammo: bullets (25 -> 24)
+INFO [93537] - 08/09/22 14:14:42 - 0:01:31 - Lost ammo: bullets (24 -> 23)
+INFO [93537] - 08/09/22 14:14:42 - 0:01:32 - Lost ammo: bullets (23 -> 22)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:32 - Lost ammo: bullets (22 -> 21)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:32 - Lost health (8 -> 1)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:32 - Lost armor (97 -> 94)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:32 - Lost ammo: bullets (21 -> 20)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:32 - Lost ammo: bullets (20 -> 19)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:33 - Dead
+INFO [93537] - 08/09/22 14:14:43 - 0:01:33 - Lost health (1 -> -6)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:33 - Lost armor (94 -> 91)
+INFO [93537] - 08/09/22 14:14:43 - 0:01:33 - Respawn player
+INFO [93537] - 08/09/22 14:14:44 - 0:01:33 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:14:45 - 0:01:34 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:14:45 - 0:01:34 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:14:45 - 0:01:35 - Lost health (100 -> 90)
+INFO [93537] - 08/09/22 14:14:45 - 0:01:35 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:14:46 - 0:01:35 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:14:46 - 0:01:35 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:14:46 - 0:01:35 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:14:46 - 0:01:36 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:14:47 - 0:01:36 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:14:47 - 0:01:36 - Kill
+INFO [93537] - 08/09/22 14:14:47 - 0:01:36 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:14:48 - 0:01:37 - Lost health (90 -> 85)
+INFO [93537] - 08/09/22 14:14:48 - 0:01:37 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:14:48 - 0:01:37 - Found health (85 -> 100)
+INFO [93537] - 08/09/22 14:14:50 - 0:01:39 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:14:52 - 0:01:42 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:14:52 - 0:01:42 - Lost health (100 -> 90)
+INFO [93537] - 08/09/22 14:14:53 - 0:01:42 - Lost health (90 -> 80)
+INFO [93537] - 08/09/22 14:14:54 - 0:01:43 - Lost health (80 -> 65)
+INFO [93537] - 08/09/22 14:14:54 - 0:01:44 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:14:55 - 0:01:44 - Lost ammo: bullets (36 -> 35)
+INFO [93537] - 08/09/22 14:14:55 - 0:01:45 - Found health (65 -> 90)
+INFO [93537] - 08/09/22 14:14:56 - 0:01:45 - Lost ammo: bullets (35 -> 34)
+INFO [93537] - 08/09/22 14:14:56 - 0:01:46 - Lost health (90 -> 75)
+INFO [93537] - 08/09/22 14:14:56 - 0:01:46 - Lost ammo: bullets (34 -> 33)
+INFO [93537] - 08/09/22 14:14:57 - 0:01:46 - Lost ammo: bullets (33 -> 32)
+INFO [93537] - 08/09/22 14:14:57 - 0:01:46 - Lost ammo: bullets (32 -> 31)
+INFO [93537] - 08/09/22 14:14:57 - 0:01:46 - Lost ammo: bullets (31 -> 30)
+INFO [93537] - 08/09/22 14:14:57 - 0:01:47 - Lost ammo: bullets (30 -> 29)
+INFO [93537] - 08/09/22 14:14:58 - 0:01:47 - Lost ammo: bullets (29 -> 28)
+INFO [93537] - 08/09/22 14:14:58 - 0:01:47 - Lost ammo: bullets (28 -> 27)
+INFO [93537] - 08/09/22 14:14:58 - 0:01:47 - Kill
+INFO [93537] - 08/09/22 14:14:58 - 0:01:47 - Lost ammo: bullets (27 -> 26)
+INFO [93537] - 08/09/22 14:14:59 - 0:01:48 - Lost ammo: bullets (26 -> 25)
+INFO [93537] - 08/09/22 14:15:01 - 0:01:50 - Lost ammo: bullets (25 -> 24)
+INFO [93537] - 08/09/22 14:15:01 - 0:01:51 - Lost ammo: bullets (24 -> 23)
+INFO [93537] - 08/09/22 14:15:01 - 0:01:51 - Lost health (75 -> 70)
+INFO [93537] - 08/09/22 14:15:02 - 0:01:51 - Lost ammo: bullets (23 -> 22)
+INFO [93537] - 08/09/22 14:15:02 - 0:01:51 - Lost health (70 -> 65)
+INFO [93537] - 08/09/22 14:15:02 - 0:01:51 - Lost ammo: bullets (22 -> 21)
+INFO [93537] - 08/09/22 14:15:02 - 0:01:52 - Lost ammo: bullets (21 -> 20)
+INFO [93537] - 08/09/22 14:15:03 - 0:01:52 - Lost ammo: bullets (20 -> 19)
+INFO [93537] - 08/09/22 14:15:03 - 0:01:52 - Lost ammo: bullets (19 -> 18)
+INFO [93537] - 08/09/22 14:15:03 - 0:01:52 - Lost ammo: bullets (18 -> 17)
+INFO [93537] - 08/09/22 14:15:03 - 0:01:53 - Lost ammo: bullets (17 -> 16)
+INFO [93537] - 08/09/22 14:15:04 - 0:01:53 - Lost ammo: bullets (16 -> 15)
+INFO [93537] - 08/09/22 14:15:04 - 0:01:53 - Lost ammo: bullets (15 -> 14)
+INFO [93537] - 08/09/22 14:15:04 - 0:01:53 - Lost ammo: bullets (14 -> 13)
+INFO [93537] - 08/09/22 14:15:04 - 0:01:54 - Found health (65 -> 90)
+INFO [93537] - 08/09/22 14:15:04 - 0:01:54 - Lost ammo: bullets (13 -> 12)
+INFO [93537] - 08/09/22 14:15:05 - 0:01:54 - Kill
+INFO [93537] - 08/09/22 14:15:05 - 0:01:54 - Lost ammo: bullets (12 -> 11)
+INFO [93537] - 08/09/22 14:15:05 - 0:01:54 - Lost ammo: bullets (11 -> 10)
+INFO [93537] - 08/09/22 14:15:07 - 0:01:56 - Lost health (90 -> 80)
+INFO [93537] - 08/09/22 14:15:07 - 0:01:57 - Lost ammo: bullets (10 -> 9)
+INFO [93537] - 08/09/22 14:15:07 - 0:01:57 - Lost ammo: bullets (9 -> 8)
+INFO [93537] - 08/09/22 14:15:08 - 0:01:57 - Lost ammo: bullets (8 -> 7)
+INFO [93537] - 08/09/22 14:15:08 - 0:01:57 - Lost ammo: bullets (7 -> 6)
+INFO [93537] - 08/09/22 14:15:09 - 0:01:58 - Lost health (80 -> 75)
+INFO [93537] - 08/09/22 14:15:09 - 0:01:58 - Found armor (0 -> 100)
+INFO [93537] - 08/09/22 14:15:10 - 0:01:59 - Lost ammo: bullets (6 -> 5)
+INFO [93537] - 08/09/22 14:15:10 - 0:01:59 - Lost ammo: bullets (5 -> 4)
+INFO [93537] - 08/09/22 14:15:10 - 0:02:00 - Lost health (75 -> 65)
+INFO [93537] - 08/09/22 14:15:10 - 0:02:00 - Lost armor (100 -> 95)
+INFO [93537] - 08/09/22 14:15:12 - 0:02:01 - Found ammo: shells (0 -> 20)
+INFO [93537] - 08/09/22 14:15:12 - 0:02:01 - Lost ammo: bullets (4 -> 3)
+INFO [93537] - 08/09/22 14:15:12 - 0:02:02 - Lost health (65 -> 61)
+INFO [93537] - 08/09/22 14:15:12 - 0:02:02 - Lost armor (95 -> 94)
+INFO [93537] - 08/09/22 14:15:14 - 0:02:03 - Lost ammo: bullets (3 -> 2)
+INFO [93537] - 08/09/22 14:15:15 - 0:02:04 - Lost ammo: bullets (2 -> 1)
+INFO [93537] - 08/09/22 14:15:15 - 0:02:04 - Lost health (61 -> 51)
+INFO [93537] - 08/09/22 14:15:15 - 0:02:04 - Lost armor (94 -> 89)
+INFO [93537] - 08/09/22 14:15:15 - 0:02:05 - Lost ammo: bullets (1 -> 0)
+INFO [93537] - 08/09/22 14:15:16 - 0:02:05 - Found ammo: bullets (0 -> 10)
+INFO [93537] - 08/09/22 14:15:16 - 0:02:06 - Lost health (51 -> 47)
+INFO [93537] - 08/09/22 14:15:16 - 0:02:06 - Lost armor (89 -> 88)
+INFO [93537] - 08/09/22 14:15:16 - 0:02:06 - Lost ammo: bullets (10 -> 9)
+INFO [93537] - 08/09/22 14:15:17 - 0:02:06 - Lost ammo: bullets (9 -> 8)
+INFO [93537] - 08/09/22 14:15:17 - 0:02:06 - Lost ammo: bullets (8 -> 7)
+INFO [93537] - 08/09/22 14:15:17 - 0:02:06 - Lost ammo: bullets (7 -> 6)
+INFO [93537] - 08/09/22 14:15:17 - 0:02:07 - Lost ammo: bullets (6 -> 5)
+INFO [93537] - 08/09/22 14:15:18 - 0:02:07 - Lost health (47 -> 43)
+INFO [93537] - 08/09/22 14:15:18 - 0:02:07 - Lost armor (88 -> 87)
+INFO [93537] - 08/09/22 14:15:18 - 0:02:07 - Lost ammo: bullets (5 -> 4)
+INFO [93537] - 08/09/22 14:15:18 - 0:02:07 - Lost health (43 -> 39)
+INFO [93537] - 08/09/22 14:15:18 - 0:02:07 - Lost armor (87 -> 86)
+INFO [93537] - 08/09/22 14:15:18 - 0:02:08 - Found weapon: Pistol
+INFO [93537] - 08/09/22 14:15:18 - 0:02:08 - Lost ammo: bullets (4 -> 3)
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Found ammo: shells (20 -> 40)
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Manual weapon change: Pistol -> shotgun
+INFO [93537] - 08/09/22 14:15:19 - 0:02:08 - Switched weapon: Pistol -> SuperShotgun
+INFO [93537] - 08/09/22 14:15:20 - 0:02:09 - Kill
+INFO [93537] - 08/09/22 14:15:20 - 0:02:09 - Lost ammo: shells (40 -> 38)
+INFO [93537] - 08/09/22 14:15:22 - 0:02:11 - Lost ammo: shells (38 -> 36)
+INFO [93537] - 08/09/22 14:15:22 - 0:02:11 - Lost health (39 -> 29)
+INFO [93537] - 08/09/22 14:15:22 - 0:02:11 - Lost armor (86 -> 81)
+INFO [93537] - 08/09/22 14:15:23 - 0:02:12 - Lost ammo: shells (36 -> 34)
+INFO [93537] - 08/09/22 14:15:23 - 0:02:13 - Lost health (29 -> 16)
+INFO [93537] - 08/09/22 14:15:23 - 0:02:13 - Lost armor (81 -> 75)
+INFO [93537] - 08/09/22 14:15:24 - 0:02:13 - Lost health (16 -> 6)
+INFO [93537] - 08/09/22 14:15:24 - 0:02:13 - Lost armor (75 -> 70)
+INFO [93537] - 08/09/22 14:15:24 - 0:02:13 - Lost ammo: shells (34 -> 32)
+INFO [93537] - 08/09/22 14:15:25 - 0:02:14 - Kill
+INFO [93537] - 08/09/22 14:15:25 - 0:02:14 - Lost ammo: shells (32 -> 30)
+INFO [93537] - 08/09/22 14:15:26 - 0:02:15 - Lost health (6 -> 2)
+INFO [93537] - 08/09/22 14:15:26 - 0:02:15 - Lost armor (70 -> 69)
+INFO [93537] - 08/09/22 14:15:26 - 0:02:15 - Kill
+INFO [93537] - 08/09/22 14:15:26 - 0:02:15 - Lost ammo: shells (30 -> 28)
+INFO [93537] - 08/09/22 14:15:27 - 0:02:16 - Kill
+INFO [93537] - 08/09/22 14:15:27 - 0:02:16 - Lost ammo: shells (28 -> 26)
+INFO [93537] - 08/09/22 14:15:29 - 0:02:18 - Lost ammo: shells (26 -> 24)
+INFO [93537] - 08/09/22 14:15:30 - 0:02:19 - Dead
+INFO [93537] - 08/09/22 14:15:30 - 0:02:19 - Lost health (2 -> -5)
+INFO [93537] - 08/09/22 14:15:30 - 0:02:19 - Lost armor (69 -> 66)
+INFO [93537] - 08/09/22 14:15:30 - 0:02:19 - Respawn player
+INFO [93537] - 08/09/22 14:15:31 - 0:02:20 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:15:32 - 0:02:21 - Lost health (100 -> 85)
+INFO [93537] - 08/09/22 14:15:32 - 0:02:21 - Found health (85 -> 100)
+INFO [93537] - 08/09/22 14:15:32 - 0:02:21 - Lost health (100 -> 95)
+INFO [93537] - 08/09/22 14:15:33 - 0:02:22 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:15:33 - 0:02:22 - Lost health (95 -> 90)
+INFO [93537] - 08/09/22 14:15:33 - 0:02:23 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:23 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:23 - Lost health (90 -> 65)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:23 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:23 - Lost health (65 -> 50)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:23 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:24 - Lost health (50 -> 35)
+INFO [93537] - 08/09/22 14:15:34 - 0:02:24 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:15:35 - 0:02:24 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:15:35 - 0:02:24 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:15:35 - 0:02:25 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:15:35 - 0:02:25 - Lost health (35 -> 30)
+INFO [93537] - 08/09/22 14:15:35 - 0:02:25 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:25 - Lost health (30 -> 15)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:25 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:25 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:25 - Lost health (15 -> 5)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:26 - Lost ammo: bullets (37 -> 36)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:26 - Dead
+INFO [93537] - 08/09/22 14:15:36 - 0:02:26 - Lost health (5 -> -5)
+INFO [93537] - 08/09/22 14:15:36 - 0:02:26 - Respawn player
+INFO [93537] - 08/09/22 14:15:37 - 0:02:26 - Lost ammo: bullets (50 -> 49)
+INFO [93537] - 08/09/22 14:15:37 - 0:02:27 - Lost ammo: bullets (49 -> 48)
+INFO [93537] - 08/09/22 14:15:38 - 0:02:28 - Lost health (100 -> 85)
+INFO [93537] - 08/09/22 14:15:39 - 0:02:28 - Found ammo: rockets (0 -> 1)
+INFO [93537] - 08/09/22 14:15:39 - 0:02:28 - Lost ammo: bullets (48 -> 47)
+INFO [93537] - 08/09/22 14:15:39 - 0:02:28 - Lost ammo: bullets (47 -> 46)
+INFO [93537] - 08/09/22 14:15:39 - 0:02:29 - Lost ammo: bullets (46 -> 45)
+INFO [93537] - 08/09/22 14:15:40 - 0:02:29 - Lost ammo: bullets (45 -> 44)
+INFO [93537] - 08/09/22 14:15:40 - 0:02:29 - Lost ammo: bullets (44 -> 43)
+INFO [93537] - 08/09/22 14:15:40 - 0:02:29 - Lost ammo: bullets (43 -> 42)
+INFO [93537] - 08/09/22 14:15:40 - 0:02:29 - Lost health (85 -> 75)
+INFO [93537] - 08/09/22 14:15:40 - 0:02:30 - Lost ammo: bullets (42 -> 41)
+INFO [93537] - 08/09/22 14:15:41 - 0:02:30 - Kill
+INFO [93537] - 08/09/22 14:15:41 - 0:02:30 - Lost health (75 -> 65)
+INFO [93537] - 08/09/22 14:15:41 - 0:02:30 - Lost ammo: bullets (41 -> 40)
+INFO [93537] - 08/09/22 14:15:41 - 0:02:30 - Lost ammo: bullets (40 -> 39)
+INFO [93537] - 08/09/22 14:15:41 - 0:02:31 - Lost ammo: bullets (39 -> 38)
+INFO [93537] - 08/09/22 14:15:43 - 0:02:32 - Lost ammo: bullets (38 -> 37)
+INFO [93537] - 08/09/22 14:15:44 - 0:02:33 - Lost health (65 -> 50)
+INFO [93537] - 08/09/22 14:15:45 - 0:02:34 - Lost health (50 -> 40)
